@@ -97,8 +97,16 @@ resource "aws_route_table_association" "private" {
   route_table_id = aws_route_table.private[count.index].id
 }
 
+# Local routes only. Pod traffic leaving the VPC is SNATed to the node and goes out through the node's primary ENI,
+# so it uses the private route tables. Not the main table, so a route added there later can't leak in.
+resource "aws_route_table" "pods" {
+  count  = var.enable_pod_subnets ? 1 : 0
+  vpc_id = aws_vpc.lab.id
+  tags   = { Name = "${var.name}-pods" }
+}
+
 resource "aws_route_table_association" "pods" {
   count          = var.enable_pod_subnets ? length(local.azs) : 0
   subnet_id      = aws_subnet.pods[count.index].id
-  route_table_id = aws_route_table.private[count.index].id
+  route_table_id = aws_route_table.pods[0].id
 }
