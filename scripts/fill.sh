@@ -2,6 +2,7 @@
 # Scales the pause deployment up in steps until the nodes are full, measuring after each step.
 # Writes captures/raw/<step>/fill.csv and full snapshots before, at the first IP failure, and at the end.
 # Usage: scripts/fill.sh [increment] [settle-seconds]
+# shellcheck source=env.sh
 source "$(dirname "$0")/env.sh"
 
 increment=${1:-5}

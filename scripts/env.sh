@@ -1,8 +1,10 @@
+# shellcheck shell=bash
 # Sourced by the other scripts: shared settings and helpers.
 set -euo pipefail
 
 REPO_ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
 TF_DIR="$REPO_ROOT/terraform"
+# shellcheck disable=SC2034 # read by the scripts that source this file
 RAW_DIR="$REPO_ROOT/captures/raw"
 
 export AWS_PROFILE=${AWS_PROFILE:-eks-lab}

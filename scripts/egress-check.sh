@@ -2,6 +2,7 @@
 # Step 4: shows pods with addresses from the non-routable range reaching the internet.
 # Their traffic leaves with the node's address (SNAT), then goes through the NAT gateway.
 # Usage: scripts/egress-check.sh [checks] [pause-replicas]
+# shellcheck source=env.sh
 source "$(dirname "$0")/env.sh"
 
 checks=${1:-4}

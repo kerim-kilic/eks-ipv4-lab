@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Saves a full snapshot of the cluster and the VPC to captures/raw/<step>/<label>/.
 # Usage: scripts/capture.sh <label>
+# shellcheck source=env.sh
 source "$(dirname "$0")/env.sh"
 
 label=${1:?usage: capture.sh <label>}

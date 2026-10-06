@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # After terraform destroy: confirms nothing billable is left. Prints counts only.
+# shellcheck source=env.sh
 source "$(dirname "$0")/env.sh"
 
 name=eks-ipv4-lab

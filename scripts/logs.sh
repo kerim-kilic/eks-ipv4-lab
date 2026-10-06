@@ -4,6 +4,7 @@
 # Usage: scripts/logs.sh <label> [--free-nodes]
 # --free-nodes scales the pause pods to 0 after the describes, so nodes at max pods have room for the debug pods.
 # Only for the end of a step: the logs on the nodes are history, the state was captured before.
+# shellcheck source=env.sh
 source "$(dirname "$0")/env.sh"
 
 label=${1:?usage: logs.sh <label>}
@@ -47,7 +48,9 @@ for pod in $(kubectl -n kube-system get pods -l k8s-app=aws-node -o jsonpath='{.
     kubectl exec "$dbg" -- sh -c 'cat /host/var/log/aws-routed-eni/ipamd.log' >"$out/ipamd-$node.log" 2>/dev/null || true
     kubectl exec "$dbg" -- sh -c 'cat /host/var/log/aws-routed-eni/plugin.log' >"$out/cni-plugin-$node.log" 2>/dev/null || true
   fi
-  [[ -n $dbg ]] && kubectl delete pod "$dbg" --wait=false >/dev/null 2>&1 || true
+  if [[ -n $dbg ]]; then
+    kubectl delete pod "$dbg" --wait=false >/dev/null 2>&1 || true
+  fi
 done
 
 log "Saved to ${out#"$REPO_ROOT"/}"

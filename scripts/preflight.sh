@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Checks before the first apply of a session. Prints no account details, only whether they match.
+# shellcheck source=env.sh
 source "$(dirname "$0")/env.sh"
 
 fail=0

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Prints one CSV row describing the cluster's address use right now. With --header, prints the column names.
+# shellcheck source=env.sh
 source "$(dirname "$0")/env.sh"
 
 if [[ ${1:-} == --header ]]; then
