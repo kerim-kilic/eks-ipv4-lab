@@ -1,0 +1,11 @@
+NAMESPACE     NAME                       READY   STATUS    RESTARTS   AGE     IP           NODE                         NOMINATED NODE   READINESS GATES
+kube-system   aws-node-47c8f             2/2     Running   0          106s    10.20.0.6    ip-10-20-0-6.ec2.internal    <none>           <none>
+kube-system   aws-node-7p8q6             2/2     Running   0          106s    10.20.0.21   ip-10-20-0-21.ec2.internal   <none>           <none>
+kube-system   aws-node-r6tgz             2/2     Running   0          105s    10.20.0.45   ip-10-20-0-45.ec2.internal   <none>           <none>
+kube-system   aws-node-vk8tl             2/2     Running   0          106s    10.20.0.52   ip-10-20-0-52.ec2.internal   <none>           <none>
+kube-system   coredns-79f8dffc57-6z664   1/1     Running   0          4m26s   10.20.0.18   ip-10-20-0-6.ec2.internal    <none>           <none>
+kube-system   coredns-79f8dffc57-822nz   1/1     Running   0          9m28s   10.20.0.4    ip-10-20-0-6.ec2.internal    <none>           <none>
+kube-system   kube-proxy-2pw76           1/1     Running   0          106s    10.20.0.52   ip-10-20-0-52.ec2.internal   <none>           <none>
+kube-system   kube-proxy-8vz8v           1/1     Running   0          106s    10.20.0.21   ip-10-20-0-21.ec2.internal   <none>           <none>
+kube-system   kube-proxy-tm4jd           1/1     Running   0          106s    10.20.0.6    ip-10-20-0-6.ec2.internal    <none>           <none>
+kube-system   kube-proxy-zrcbf           1/1     Running   0          105s    10.20.0.45   ip-10-20-0-45.ec2.internal   <none>           <none>

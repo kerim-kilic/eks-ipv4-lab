@@ -1,0 +1,9 @@
+awscni_assigned_ip_addresses 10
+awscni_aws_api_error_count{api="CreateNetworkInterface",error="InsufficientFreeAddressesInSubnet"} 5
+awscni_eni_allocated 2
+awscni_eni_max 3
+awscni_ip_max 15
+awscni_ipamd_error_count{fn="increaseIPPoolAllocENI"} 5
+awscni_ipamd_error_count{fn="increaseIPPoolAllocIPAddressesFailed"} 5
+awscni_no_available_ip_addresses 79
+awscni_total_ip_addresses 10

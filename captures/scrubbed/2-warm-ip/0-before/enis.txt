@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                  DescribeNetworkInterfaces                                                                  |
++-----------+---------------------------------------------------+--------------+----------------------+-----------+---------------------------+---------------+
+| Addresses |                    Description                    | DeviceIndex  |      Instance        | Prefixes  |          Subnet           |     Type      |
++-----------+---------------------------------------------------+--------------+----------------------+-----------+---------------------------+---------------+
+|  1        |  Interface for NAT Gateway nat-EXAMPLE1  |  1           |  None                |  0        |  subnet-EXAMPLE2 |  nat_gateway  |
+|  1        |  Amazon EKS eks-ipv4-lab                          |  1           |  None                |  0        |  subnet-EXAMPLE1 |  interface    |
+|  6        |                                                   |  0           |  i-EXAMPLE5 |  0        |  subnet-EXAMPLE1 |  interface    |
+|  6        |                                                   |  0           |  i-EXAMPLE6 |  0        |  subnet-EXAMPLE1 |  interface    |
+|  1        |  Amazon EKS eks-ipv4-lab                          |  1           |  None                |  0        |  subnet-EXAMPLE4 |  interface    |
+|  1        |  Interface for NAT Gateway nat-EXAMPLE2  |  1           |  None                |  0        |  subnet-EXAMPLE3 |  nat_gateway  |
+|  6        |                                                   |  0           |  i-EXAMPLE7 |  0        |  subnet-EXAMPLE4 |  interface    |
+|  6        |                                                   |  0           |  i-EXAMPLE8 |  0        |  subnet-EXAMPLE4 |  interface    |
++-----------+---------------------------------------------------+--------------+----------------------+-----------+---------------------------+---------------+

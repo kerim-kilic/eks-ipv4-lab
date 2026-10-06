@@ -1,0 +1,21 @@
+NAME             READY   STATUS      RESTARTS   AGE   IP              NODE                         NOMINATED NODE   READINESS GATES
+egress-check-1   0/1     Completed   0          11s   100.64.20.136   ip-10-20-0-12.ec2.internal   <none>           <none>
+egress-check-2   0/1     Completed   0          10s   100.64.43.85    ip-10-20-0-54.ec2.internal   <none>           <none>
+egress-check-3   0/1     Completed   0          9s    100.64.46.59    ip-10-20-0-55.ec2.internal   <none>           <none>
+egress-check-4   0/1     Completed   0          8s    100.64.18.149   ip-10-20-0-7.ec2.internal    <none>           <none>
+
+egress-check-1 on ip-10-20-0-12.ec2.internal:
+pod address: 100.64.20.136
+seen from the internet as: 203.0.113.1
+
+egress-check-2 on ip-10-20-0-54.ec2.internal:
+pod address: 100.64.43.85
+seen from the internet as: 203.0.113.2
+
+egress-check-3 on ip-10-20-0-55.ec2.internal:
+pod address: 100.64.46.59
+seen from the internet as: 203.0.113.2
+
+egress-check-4 on ip-10-20-0-7.ec2.internal:
+pod address: 100.64.18.149
+seen from the internet as: 203.0.113.1

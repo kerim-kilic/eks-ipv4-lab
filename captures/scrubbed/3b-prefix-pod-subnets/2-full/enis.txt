@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                  DescribeNetworkInterfaces                                                                  |
++-----------+---------------------------------------------------+--------------+----------------------+-----------+---------------------------+---------------+
+| Addresses |                    Description                    | DeviceIndex  |      Instance        | Prefixes  |          Subnet           |     Type      |
++-----------+---------------------------------------------------+--------------+----------------------+-----------+---------------------------+---------------+
+|  1        |  Amazon EKS eks-ipv4-lab                          |  1           |  None                |  0        |  subnet-EXAMPLE5 |  interface    |
+|  1        |                                                   |  0           |  i-EXAMPLE13 |  0        |  subnet-EXAMPLE5 |  interface    |
+|  1        |                                                   |  0           |  i-EXAMPLE14 |  0        |  subnet-EXAMPLE5 |  interface    |
+|  1        |  aws-K8S-i-EXAMPLE13                      |  1           |  i-EXAMPLE13 |  4        |  subnet-EXAMPLE6 |  interface    |
+|  1        |  aws-K8S-i-EXAMPLE14                      |  1           |  i-EXAMPLE14 |  4        |  subnet-EXAMPLE6 |  interface    |
+|  1        |  Interface for NAT Gateway nat-EXAMPLE3  |  1           |  None                |  0        |  subnet-EXAMPLE7 |  nat_gateway  |
+|  1        |  Amazon EKS eks-ipv4-lab                          |  1           |  None                |  0        |  subnet-EXAMPLE8 |  interface    |
+|  1        |                                                   |  0           |  i-EXAMPLE16 |  0        |  subnet-EXAMPLE8 |  interface    |
+|  1        |  Interface for NAT Gateway nat-EXAMPLE4  |  1           |  None                |  0        |  subnet-EXAMPLE10 |  nat_gateway  |
+|  1        |  aws-K8S-i-EXAMPLE16                      |  1           |  i-EXAMPLE16 |  4        |  subnet-EXAMPLE9 |  interface    |
+|  1        |                                                   |  0           |  i-EXAMPLE15 |  0        |  subnet-EXAMPLE8 |  interface    |
+|  1        |  aws-K8S-i-EXAMPLE15                      |  1           |  i-EXAMPLE15 |  4        |  subnet-EXAMPLE9 |  interface    |
++-----------+---------------------------------------------------+--------------+----------------------+-----------+---------------------------+---------------+

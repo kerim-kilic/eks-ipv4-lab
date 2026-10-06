@@ -1,0 +1,10 @@
+awscni_assigned_ip_addresses 0
+awscni_aws_api_error_count{api="AssignPrivateIpAddresses",error="InsufficientCidrBlocks"} 176
+awscni_aws_api_error_count{api="CreateNetworkInterface",error="InvalidParameterValue"} 88
+awscni_eni_allocated 1
+awscni_eni_max 3
+awscni_ip_max 240
+awscni_ipamd_error_count{fn="increaseIPPoolAllocENI"} 88
+awscni_ipamd_error_count{fn="increaseIPPoolAllocIPAddressesFailed"} 88
+awscni_no_available_ip_addresses 173
+awscni_total_ip_addresses 0

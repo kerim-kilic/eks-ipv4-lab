@@ -1,0 +1,47 @@
+Name:                   pause
+Namespace:              default
+CreationTimestamp:      Mon, 05 Oct 2026 09:31:40 +0200
+Labels:                 app=pause
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=pause
+Replicas:               58 desired | 58 updated | 58 total | 40 available | 18 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=pause
+  Containers:
+   pause:
+    Image:      registry.k8s.io/pause:3.10
+    Port:       <none>
+    Host Port:  <none>
+    Limits:
+      memory:  16Mi
+    Requests:
+      cpu:         5m
+      memory:      8Mi
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  <none>
+  Tolerations:     <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      False   MinimumReplicasUnavailable
+OldReplicaSets:  <none>
+NewReplicaSet:   pause-68d5b89fc (58/58 replicas created)
+Events:
+  Type    Reason             Age                  From                   Message
+  ----    ------             ----                 ----                   -------
+  Normal  ScalingReplicaSet  15m (x2 over 53m)    deployment-controller  Scaled up replica set pause-68d5b89fc from 0 to 5
+  Normal  ScalingReplicaSet  14m (x2 over 52m)    deployment-controller  Scaled up replica set pause-68d5b89fc from 5 to 10
+  Normal  ScalingReplicaSet  13m (x2 over 50m)    deployment-controller  Scaled up replica set pause-68d5b89fc from 10 to 15
+  Normal  ScalingReplicaSet  12m (x2 over 49m)    deployment-controller  Scaled up replica set pause-68d5b89fc from 15 to 20
+  Normal  ScalingReplicaSet  11m (x2 over 48m)    deployment-controller  Scaled up replica set pause-68d5b89fc from 20 to 25
+  Normal  ScalingReplicaSet  10m (x2 over 47m)    deployment-controller  Scaled up replica set pause-68d5b89fc from 25 to 30
+  Normal  ScalingReplicaSet  9m13s (x2 over 46m)  deployment-controller  Scaled up replica set pause-68d5b89fc from 30 to 35
+  Normal  ScalingReplicaSet  8m7s (x2 over 45m)   deployment-controller  Scaled up replica set pause-68d5b89fc from 35 to 40
+  Normal  ScalingReplicaSet  5m20s (x2 over 42m)  deployment-controller  Scaled up replica set pause-68d5b89fc from 40 to 45
+  Normal  ScalingReplicaSet  119s (x7 over 41m)   deployment-controller  (combined from similar events): Scaled up replica set pause-68d5b89fc from 55 to 58

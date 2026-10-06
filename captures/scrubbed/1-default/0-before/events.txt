@@ -1,0 +1,142 @@
+NAMESPACE     LAST SEEN   TYPE      REASON                    OBJECT                              MESSAGE
+default       2m14s       Normal    Starting                  node/ip-10-20-0-11.ec2.internal     
+default       2m15s       Normal    Starting                  node/ip-10-20-0-7.ec2.internal      
+default       2m18s       Normal    Starting                  node/ip-10-20-0-57.ec2.internal     
+default       2m20s       Normal    Starting                  node/ip-10-20-0-56.ec2.internal     
+kube-system   7m55s       Normal    LeaderElection            lease/cloud-controller-manager      ip-172-16-61-187.ec2.internal_66e94d35-1a68-41ee-9bd9-4028f5c22442 became leader
+kube-system   7m55s       Normal    LeaderElection            lease/eks-certificates-controller   ip-172-16-61-187.ec2.internal became leader
+kube-system   7m48s       Normal    LeaderElection            lease/eks-coredns-autoscaler        ip-172-16-61-187.ec2.internal_6dba76a3-9276-40ce-83b9-3a1f891fadd2 became leader
+kube-system   7m47s       Normal    LeaderElection            lease/kube-controller-manager       ip-172-16-61-187.ec2.internal_25c10e68-43ad-43ad-a77e-7e73e78aa253 became leader
+kube-system   7m45s       Normal    LeaderElection            lease/cp-vpc-resource-controller    ip-172-16-61-187.ec2.internal_b5e0d3a6-bc35-4a1b-8fcb-ff81b1e1a5b0 became leader
+kube-system   7m43s       Normal    LeaderElection            lease/kube-scheduler                ip-172-16-61-187.ec2.internal_7a730115-b781-4ffa-bb33-680ec4b03662 became leader
+default       2m28s       Warning   InvalidDiskCapacity       node/ip-10-20-0-56.ec2.internal     invalid capacity 0 on image filesystem
+default       2m28s       Normal    NodeAllocatableEnforced   node/ip-10-20-0-56.ec2.internal     Updated Node Allocatable limit across pods
+default       2m28s       Normal    NodeHasSufficientPID      node/ip-10-20-0-56.ec2.internal     Node ip-10-20-0-56.ec2.internal status is now: NodeHasSufficientPID
+default       2m28s       Normal    Starting                  node/ip-10-20-0-56.ec2.internal     Starting kubelet.
+default       2m28s       Normal    NodeHasNoDiskPressure     node/ip-10-20-0-57.ec2.internal     Node ip-10-20-0-57.ec2.internal status is now: NodeHasNoDiskPressure
+default       2m28s       Normal    NodeAllocatableEnforced   node/ip-10-20-0-57.ec2.internal     Updated Node Allocatable limit across pods
+default       2m28s       Normal    NodeHasSufficientPID      node/ip-10-20-0-57.ec2.internal     Node ip-10-20-0-57.ec2.internal status is now: NodeHasSufficientPID
+default       2m28s       Normal    NodeHasNoDiskPressure     node/ip-10-20-0-56.ec2.internal     Node ip-10-20-0-56.ec2.internal status is now: NodeHasNoDiskPressure
+default       2m28s       Normal    NodeHasSufficientMemory   node/ip-10-20-0-56.ec2.internal     Node ip-10-20-0-56.ec2.internal status is now: NodeHasSufficientMemory
+default       2m28s       Normal    Starting                  node/ip-10-20-0-57.ec2.internal     Starting kubelet.
+default       2m28s       Warning   InvalidDiskCapacity       node/ip-10-20-0-57.ec2.internal     invalid capacity 0 on image filesystem
+default       2m28s       Normal    NodeHasSufficientMemory   node/ip-10-20-0-57.ec2.internal     Node ip-10-20-0-57.ec2.internal status is now: NodeHasSufficientMemory
+default       2m26s       Normal    Starting                  node/ip-10-20-0-7.ec2.internal      Starting kubelet.
+default       2m26s       Normal    NodeHasSufficientMemory   node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeHasSufficientMemory
+default       2m26s       Normal    NodeAllocatableEnforced   node/ip-10-20-0-7.ec2.internal      Updated Node Allocatable limit across pods
+default       2m26s       Normal    NodeHasSufficientPID      node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeHasSufficientPID
+default       2m26s       Normal    NodeHasNoDiskPressure     node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeHasNoDiskPressure
+kube-system   2m25s       Normal    Scheduled                 pod/aws-node-vltjr                  Successfully assigned kube-system/aws-node-vltjr to ip-10-20-0-56.ec2.internal
+kube-system   2m25s       Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-sltkr
+default       2m25s       Normal    NodeHasNoDiskPressure     node/ip-10-20-0-11.ec2.internal     Node ip-10-20-0-11.ec2.internal status is now: NodeHasNoDiskPressure
+default       2m25s       Normal    NodeHasSufficientMemory   node/ip-10-20-0-11.ec2.internal     Node ip-10-20-0-11.ec2.internal status is now: NodeHasSufficientMemory
+default       2m25s       Normal    Starting                  node/ip-10-20-0-11.ec2.internal     Starting kubelet.
+kube-system   2m25s       Normal    Scheduled                 pod/kube-proxy-sltkr                Successfully assigned kube-system/kube-proxy-sltkr to ip-10-20-0-56.ec2.internal
+default       2m25s       Warning   InvalidDiskCapacity       node/ip-10-20-0-11.ec2.internal     invalid capacity 0 on image filesystem
+default       2m25s       Normal    NodeAllocatableEnforced   node/ip-10-20-0-11.ec2.internal     Updated Node Allocatable limit across pods
+kube-system   2m25s       Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-vltjr
+default       2m25s       Normal    NodeHasSufficientPID      node/ip-10-20-0-11.ec2.internal     Node ip-10-20-0-11.ec2.internal status is now: NodeHasSufficientPID
+default       2m24s       Normal    Synced                    node/ip-10-20-0-56.ec2.internal     Node synced successfully
+kube-system   2m24s       Normal    Pulling                   pod/aws-node-vltjr                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+kube-system   2m24s       Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-cvkml
+kube-system   2m24s       Normal    Pulling                   pod/kube-proxy-sltkr                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+default       2m24s       Normal    Synced                    node/ip-10-20-0-57.ec2.internal     Node synced successfully
+kube-system   2m24s       Normal    Scheduled                 pod/aws-node-9hnzp                  Successfully assigned kube-system/aws-node-9hnzp to ip-10-20-0-57.ec2.internal
+kube-system   2m24s       Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-9hnzp
+kube-system   2m24s       Normal    Scheduled                 pod/kube-proxy-cvkml                Successfully assigned kube-system/kube-proxy-cvkml to ip-10-20-0-57.ec2.internal
+default       2m23s       Normal    RegisteredNode            node/ip-10-20-0-57.ec2.internal     Node ip-10-20-0-57.ec2.internal event: Registered Node ip-10-20-0-57.ec2.internal in Controller
+kube-system   2m23s       Normal    Pulling                   pod/aws-node-9hnzp                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+default       2m23s       Normal    RegisteredNode            node/ip-10-20-0-56.ec2.internal     Node ip-10-20-0-56.ec2.internal event: Registered Node ip-10-20-0-56.ec2.internal in Controller
+kube-system   2m23s       Normal    Pulling                   pod/kube-proxy-cvkml                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+kube-system   2m21s       Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-qv8dn
+default       2m21s       Normal    Synced                    node/ip-10-20-0-7.ec2.internal      Node synced successfully
+kube-system   2m21s       Normal    Pulled                    pod/aws-node-vltjr                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.538s (3.538s including waiting). Image size: 79823548 bytes.
+kube-system   2m21s       Normal    Scheduled                 pod/aws-node-qv8dn                  Successfully assigned kube-system/aws-node-qv8dn to ip-10-20-0-7.ec2.internal
+kube-system   2m21s       Normal    Scheduled                 pod/kube-proxy-grkxr                Successfully assigned kube-system/kube-proxy-grkxr to ip-10-20-0-7.ec2.internal
+kube-system   2m21s       Normal    Pulled                    pod/kube-proxy-sltkr                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 3.055s (3.055s including waiting). Image size: 35059164 bytes.
+kube-system   2m21s       Normal    Created                   pod/kube-proxy-sltkr                Container created
+kube-system   2m21s       Normal    Started                   pod/kube-proxy-sltkr                Container started
+kube-system   2m21s       Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-grkxr
+kube-system   2m21s       Normal    Created                   pod/aws-node-vltjr                  Container created
+kube-system   2m20s       Normal    Started                   pod/aws-node-vltjr                  Container started
+kube-system   2m20s       Normal    Scheduled                 pod/aws-node-9rx6p                  Successfully assigned kube-system/aws-node-9rx6p to ip-10-20-0-11.ec2.internal
+default       2m20s       Normal    Synced                    node/ip-10-20-0-11.ec2.internal     Node synced successfully
+kube-system   2m20s       Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-9rx6p
+kube-system   2m20s       Normal    Scheduled                 pod/kube-proxy-n7wf6                Successfully assigned kube-system/kube-proxy-n7wf6 to ip-10-20-0-11.ec2.internal
+kube-system   2m20s       Normal    Pulling                   pod/kube-proxy-grkxr                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+kube-system   2m20s       Normal    Pulling                   pod/aws-node-qv8dn                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+kube-system   2m20s       Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-n7wf6
+kube-system   2m20s       Normal    Pulled                    pod/kube-proxy-cvkml                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 2.783s (2.783s including waiting). Image size: 35059164 bytes.
+kube-system   2m20s       Normal    Created                   pod/kube-proxy-cvkml                Container created
+kube-system   2m20s       Normal    Started                   pod/kube-proxy-cvkml                Container started
+kube-system   2m19s       Normal    Pulled                    pod/aws-node-9hnzp                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.161s (3.161s including waiting). Image size: 79823548 bytes.
+kube-system   2m19s       Normal    Pulling                   pod/aws-node-9rx6p                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+kube-system   2m19s       Normal    Pulling                   pod/kube-proxy-n7wf6                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+kube-system   2m19s       Normal    Created                   pod/aws-node-9hnzp                  Container created
+kube-system   2m19s       Normal    Started                   pod/aws-node-9hnzp                  Container started
+kube-system   2m18s       Normal    Pulling                   pod/aws-node-vltjr                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+default       2m18s       Normal    RegisteredNode            node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal event: Registered Node ip-10-20-0-7.ec2.internal in Controller
+default       2m18s       Normal    RegisteredNode            node/ip-10-20-0-11.ec2.internal     Node ip-10-20-0-11.ec2.internal event: Registered Node ip-10-20-0-11.ec2.internal in Controller
+kube-system   2m17s       Normal    Pulled                    pod/kube-proxy-grkxr                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 2.947s (2.948s including waiting). Image size: 35059164 bytes.
+kube-system   2m17s       Normal    Created                   pod/kube-proxy-grkxr                Container created
+kube-system   2m17s       Normal    Pulling                   pod/aws-node-9hnzp                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+kube-system   2m16s       Normal    Started                   pod/kube-proxy-n7wf6                Container started
+kube-system   2m16s       Normal    Started                   pod/kube-proxy-grkxr                Container started
+kube-system   2m16s       Normal    Pulled                    pod/aws-node-vltjr                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 2.035s (2.035s including waiting). Image size: 61308187 bytes.
+kube-system   2m16s       Normal    Created                   pod/aws-node-vltjr                  Container created
+kube-system   2m16s       Normal    Started                   pod/aws-node-vltjr                  Container started
+kube-system   2m16s       Normal    Pulling                   pod/aws-node-vltjr                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   2m16s       Normal    Created                   pod/aws-node-qv8dn                  Container created
+kube-system   2m16s       Normal    Started                   pod/aws-node-qv8dn                  Container started
+kube-system   2m16s       Normal    Pulled                    pod/aws-node-qv8dn                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.609s (3.609s including waiting). Image size: 79823548 bytes.
+kube-system   2m16s       Normal    Created                   pod/kube-proxy-n7wf6                Container created
+kube-system   2m16s       Normal    Pulled                    pod/kube-proxy-n7wf6                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 2.785s (2.785s including waiting). Image size: 35059164 bytes.
+kube-system   2m15s       Normal    Pulled                    pod/aws-node-vltjr                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.288s (1.288s including waiting). Image size: 34374447 bytes.
+kube-system   2m15s       Normal    Started                   pod/aws-node-9rx6p                  Container started
+kube-system   2m15s       Normal    Created                   pod/aws-node-9rx6p                  Container created
+kube-system   2m15s       Normal    Pulled                    pod/aws-node-9rx6p                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.473s (3.473s including waiting). Image size: 79823548 bytes.
+kube-system   2m15s       Normal    Started                   pod/aws-node-vltjr                  Container started
+kube-system   2m15s       Normal    Created                   pod/aws-node-vltjr                  Container created
+kube-system   2m14s       Normal    Created                   pod/aws-node-9hnzp                  Container created
+kube-system   2m14s       Normal    Pulling                   pod/aws-node-9hnzp                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   2m14s       Normal    Started                   pod/aws-node-9hnzp                  Container started
+kube-system   2m14s       Normal    Pulled                    pod/aws-node-9hnzp                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 2.079s (2.079s including waiting). Image size: 61308187 bytes.
+kube-system   2m13s       Normal    Created                   pod/aws-node-9hnzp                  Container created
+kube-system   2m13s       Normal    Pulling                   pod/aws-node-qv8dn                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+kube-system   2m13s       Normal    Started                   pod/aws-node-9hnzp                  Container started
+default       2m13s       Normal    NodeReady                 node/ip-10-20-0-56.ec2.internal     Node ip-10-20-0-56.ec2.internal status is now: NodeReady
+kube-system   2m13s       Normal    Pulled                    pod/aws-node-9hnzp                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.315s (1.315s including waiting). Image size: 34374447 bytes.
+kube-system   2m12s       Normal    Pulling                   pod/aws-node-9rx6p                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+kube-system   2m11s       Normal    Pulled                    pod/aws-node-qv8dn                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 1.968s (1.968s including waiting). Image size: 61308187 bytes.
+kube-system   2m11s       Normal    Created                   pod/aws-node-qv8dn                  Container created
+default       2m11s       Normal    NodeReady                 node/ip-10-20-0-57.ec2.internal     Node ip-10-20-0-57.ec2.internal status is now: NodeReady
+kube-system   2m11s       Normal    Pulling                   pod/aws-node-qv8dn                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   2m11s       Normal    Started                   pod/aws-node-qv8dn                  Container started
+kube-system   2m10s       Normal    Pulling                   pod/aws-node-9rx6p                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   2m10s       Normal    Started                   pod/aws-node-9rx6p                  Container started
+kube-system   2m10s       Normal    Started                   pod/aws-node-qv8dn                  Container started
+kube-system   2m10s       Normal    Created                   pod/aws-node-9rx6p                  Container created
+kube-system   2m10s       Normal    Pulled                    pod/aws-node-9rx6p                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 2.02s (2.02s including waiting). Image size: 61308187 bytes.
+kube-system   2m10s       Normal    Pulled                    pod/aws-node-qv8dn                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.252s (1.252s including waiting). Image size: 34374447 bytes.
+kube-system   2m10s       Normal    Created                   pod/aws-node-qv8dn                  Container created
+kube-system   2m9s        Normal    Pulled                    pod/aws-node-9rx6p                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.456s (1.456s including waiting). Image size: 34374447 bytes.
+kube-system   2m9s        Normal    Created                   pod/aws-node-9rx6p                  Container created
+kube-system   2m9s        Normal    Started                   pod/aws-node-9rx6p                  Container started
+default       2m8s        Normal    NodeReady                 node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeReady
+default       2m7s        Normal    NodeReady                 node/ip-10-20-0-11.ec2.internal     Node ip-10-20-0-11.ec2.internal status is now: NodeReady
+kube-system   92s         Normal    NoPods                    poddisruptionbudget/coredns         No matching pods found
+kube-system   92s         Normal    ScalingReplicaSet         deployment/coredns                  Scaled up replica set coredns-79f8dffc57 from 0 to 2
+kube-system   91s         Normal    Pulling                   pod/coredns-79f8dffc57-qfvwr        Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4"
+kube-system   91s         Normal    Scheduled                 pod/coredns-79f8dffc57-6vpwm        Successfully assigned kube-system/coredns-79f8dffc57-6vpwm to ip-10-20-0-56.ec2.internal
+kube-system   91s         Normal    Pulling                   pod/coredns-79f8dffc57-6vpwm        Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4"
+kube-system   91s         Normal    SuccessfulCreate          replicaset/coredns-79f8dffc57       Created pod: coredns-79f8dffc57-qfvwr
+kube-system   91s         Normal    SuccessfulCreate          replicaset/coredns-79f8dffc57       Created pod: coredns-79f8dffc57-6vpwm
+kube-system   91s         Normal    Scheduled                 pod/coredns-79f8dffc57-qfvwr        Successfully assigned kube-system/coredns-79f8dffc57-qfvwr to ip-10-20-0-7.ec2.internal
+kube-system   89s         Normal    Created                   pod/coredns-79f8dffc57-6vpwm        Container created
+kube-system   89s         Normal    Pulled                    pod/coredns-79f8dffc57-qfvwr        Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4" in 1.255s (1.255s including waiting). Image size: 25301553 bytes.
+kube-system   89s         Normal    Created                   pod/coredns-79f8dffc57-qfvwr        Container created
+kube-system   89s         Normal    Started                   pod/coredns-79f8dffc57-qfvwr        Container started
+kube-system   89s         Warning   Unhealthy                 pod/coredns-79f8dffc57-qfvwr        Readiness probe failed: Get "http://10.20.0.24:8181/ready": dial tcp 10.20.0.24:8181: connect: connection refused
+kube-system   89s         Warning   Unhealthy                 pod/coredns-79f8dffc57-6vpwm        Readiness probe failed: Get "http://10.20.0.53:8181/ready": dial tcp 10.20.0.53:8181: connect: connection refused
+kube-system   89s         Normal    Started                   pod/coredns-79f8dffc57-6vpwm        Container started
+kube-system   89s         Normal    Pulled                    pod/coredns-79f8dffc57-6vpwm        Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4" in 1.27s (1.27s including waiting). Image size: 25301553 bytes.

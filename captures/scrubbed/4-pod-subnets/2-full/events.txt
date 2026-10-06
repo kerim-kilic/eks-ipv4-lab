@@ -1,0 +1,400 @@
+NAMESPACE     LAST SEEN   TYPE      REASON                    OBJECT                              MESSAGE
+default       17m         Normal    Starting                  node/ip-10-20-0-54.ec2.internal     
+default       16m         Normal    Starting                  node/ip-10-20-0-7.ec2.internal      
+default       16m         Normal    Starting                  node/ip-10-20-0-55.ec2.internal     
+default       17m         Normal    Starting                  node/ip-10-20-0-12.ec2.internal     
+kube-system   23m         Normal    LeaderElection            lease/eks-certificates-controller   ip-172-16-61-131.ec2.internal became leader
+kube-system   23m         Normal    LeaderElection            lease/cloud-controller-manager      ip-172-16-61-131.ec2.internal_d9ce38c6-b95b-4f68-b9c3-630ce09d74d7 became leader
+kube-system   22m         Normal    LeaderElection            lease/kube-scheduler                ip-172-16-61-131.ec2.internal_d579429e-bf1e-4adf-bcc6-f66a043a4c18 became leader
+kube-system   22m         Normal    LeaderElection            lease/cloud-controller-manager      ip-172-16-61-131.ec2.internal_64ef3ecc-3589-455a-a413-98daa8c85847 became leader
+kube-system   22m         Normal    LeaderElection            lease/eks-coredns-autoscaler        ip-172-16-61-131.ec2.internal_f721304e-7113-4f45-b2cd-eb5fd2d7eea5 became leader
+kube-system   22m         Normal    LeaderElection            lease/cp-vpc-resource-controller    ip-172-16-61-131.ec2.internal_6f70f068-d008-47ee-994f-d555793f0375 became leader
+kube-system   22m         Normal    LeaderElection            lease/kube-controller-manager       ip-172-16-61-131.ec2.internal_78ff910b-beca-40dc-9c71-44edad320c84 became leader
+default       17m         Normal    Starting                  node/ip-10-20-0-54.ec2.internal     Starting kubelet.
+default       17m         Normal    NodeHasNoDiskPressure     node/ip-10-20-0-12.ec2.internal     Node ip-10-20-0-12.ec2.internal status is now: NodeHasNoDiskPressure
+default       17m         Normal    NodeHasSufficientPID      node/ip-10-20-0-54.ec2.internal     Node ip-10-20-0-54.ec2.internal status is now: NodeHasSufficientPID
+default       17m         Normal    NodeAllocatableEnforced   node/ip-10-20-0-54.ec2.internal     Updated Node Allocatable limit across pods
+default       17m         Normal    NodeAllocatableEnforced   node/ip-10-20-0-12.ec2.internal     Updated Node Allocatable limit across pods
+default       17m         Normal    NodeHasNoDiskPressure     node/ip-10-20-0-54.ec2.internal     Node ip-10-20-0-54.ec2.internal status is now: NodeHasNoDiskPressure
+default       17m         Normal    NodeHasSufficientMemory   node/ip-10-20-0-54.ec2.internal     Node ip-10-20-0-54.ec2.internal status is now: NodeHasSufficientMemory
+default       17m         Warning   InvalidDiskCapacity       node/ip-10-20-0-12.ec2.internal     invalid capacity 0 on image filesystem
+default       17m         Normal    NodeHasSufficientMemory   node/ip-10-20-0-12.ec2.internal     Node ip-10-20-0-12.ec2.internal status is now: NodeHasSufficientMemory
+default       17m         Normal    NodeHasSufficientPID      node/ip-10-20-0-12.ec2.internal     Node ip-10-20-0-12.ec2.internal status is now: NodeHasSufficientPID
+default       17m         Normal    Starting                  node/ip-10-20-0-12.ec2.internal     Starting kubelet.
+kube-system   17m         Normal    Scheduled                 pod/kube-proxy-df8dx                Successfully assigned kube-system/kube-proxy-df8dx to ip-10-20-0-12.ec2.internal
+kube-system   17m         Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-4z6pf
+kube-system   17m         Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-df8dx
+kube-system   17m         Normal    Scheduled                 pod/aws-node-4z6pf                  Successfully assigned kube-system/aws-node-4z6pf to ip-10-20-0-12.ec2.internal
+kube-system   17m         Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-fgtdj
+default       17m         Normal    RegisteredNode            node/ip-10-20-0-12.ec2.internal     Node ip-10-20-0-12.ec2.internal event: Registered Node ip-10-20-0-12.ec2.internal in Controller
+default       17m         Normal    RegisteredNode            node/ip-10-20-0-54.ec2.internal     Node ip-10-20-0-54.ec2.internal event: Registered Node ip-10-20-0-54.ec2.internal in Controller
+default       17m         Normal    Synced                    node/ip-10-20-0-12.ec2.internal     Node synced successfully
+kube-system   17m         Normal    Pulling                   pod/aws-node-4z6pf                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+default       17m         Normal    Synced                    node/ip-10-20-0-54.ec2.internal     Node synced successfully
+kube-system   17m         Normal    Pulling                   pod/kube-proxy-df8dx                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+kube-system   17m         Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-jsrdh
+kube-system   17m         Normal    Scheduled                 pod/aws-node-jsrdh                  Successfully assigned kube-system/aws-node-jsrdh to ip-10-20-0-54.ec2.internal
+kube-system   17m         Normal    Scheduled                 pod/kube-proxy-fgtdj                Successfully assigned kube-system/kube-proxy-fgtdj to ip-10-20-0-54.ec2.internal
+kube-system   17m         Normal    Pulling                   pod/kube-proxy-fgtdj                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+kube-system   17m         Normal    Pulling                   pod/aws-node-jsrdh                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+kube-system   17m         Normal    Started                   pod/kube-proxy-df8dx                Container started
+kube-system   17m         Normal    Created                   pod/kube-proxy-df8dx                Container created
+kube-system   17m         Normal    Pulled                    pod/kube-proxy-df8dx                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 2.783s (2.783s including waiting). Image size: 35059164 bytes.
+kube-system   17m         Normal    Pulled                    pod/kube-proxy-fgtdj                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 2.644s (2.644s including waiting). Image size: 35059164 bytes.
+kube-system   17m         Normal    Created                   pod/kube-proxy-fgtdj                Container created
+kube-system   17m         Normal    Created                   pod/aws-node-jsrdh                  Container created
+kube-system   17m         Normal    Started                   pod/aws-node-4z6pf                  Container started
+kube-system   17m         Normal    Started                   pod/aws-node-jsrdh                  Container started
+kube-system   17m         Normal    Pulled                    pod/aws-node-jsrdh                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.311s (3.311s including waiting). Image size: 79823548 bytes.
+kube-system   17m         Normal    Pulled                    pod/aws-node-4z6pf                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.401s (3.401s including waiting). Image size: 79823548 bytes.
+kube-system   17m         Normal    Created                   pod/aws-node-4z6pf                  Container created
+kube-system   17m         Normal    Started                   pod/kube-proxy-fgtdj                Container started
+default       17m         Warning   InvalidDiskCapacity       node/ip-10-20-0-7.ec2.internal      invalid capacity 0 on image filesystem
+default       17m         Normal    Starting                  node/ip-10-20-0-7.ec2.internal      Starting kubelet.
+default       17m         Normal    NodeAllocatableEnforced   node/ip-10-20-0-7.ec2.internal      Updated Node Allocatable limit across pods
+default       17m         Normal    NodeHasSufficientPID      node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeHasSufficientPID
+default       17m         Normal    NodeHasSufficientPID      node/ip-10-20-0-55.ec2.internal     Node ip-10-20-0-55.ec2.internal status is now: NodeHasSufficientPID
+default       17m         Normal    NodeHasNoDiskPressure     node/ip-10-20-0-55.ec2.internal     Node ip-10-20-0-55.ec2.internal status is now: NodeHasNoDiskPressure
+default       17m         Normal    Starting                  node/ip-10-20-0-55.ec2.internal     Starting kubelet.
+default       17m         Normal    NodeHasNoDiskPressure     node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeHasNoDiskPressure
+default       17m         Normal    NodeHasSufficientMemory   node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeHasSufficientMemory
+default       17m         Warning   InvalidDiskCapacity       node/ip-10-20-0-55.ec2.internal     invalid capacity 0 on image filesystem
+default       17m         Normal    NodeAllocatableEnforced   node/ip-10-20-0-55.ec2.internal     Updated Node Allocatable limit across pods
+default       17m         Normal    NodeHasSufficientMemory   node/ip-10-20-0-55.ec2.internal     Node ip-10-20-0-55.ec2.internal status is now: NodeHasSufficientMemory
+kube-system   17m         Normal    Pulling                   pod/aws-node-jsrdh                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+kube-system   17m         Normal    Pulling                   pod/aws-node-4z6pf                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+kube-system   16m         Normal    Pulling                   pod/aws-node-jsrdh                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   16m         Normal    Pulling                   pod/aws-node-4z6pf                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   16m         Normal    Created                   pod/aws-node-jsrdh                  Container created
+kube-system   16m         Normal    Started                   pod/aws-node-jsrdh                  Container started
+kube-system   16m         Normal    Pulled                    pod/aws-node-4z6pf                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 2.385s (2.385s including waiting). Image size: 61308187 bytes.
+kube-system   16m         Normal    Pulled                    pod/aws-node-jsrdh                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 2.558s (2.558s including waiting). Image size: 61308187 bytes.
+kube-system   16m         Normal    Created                   pod/aws-node-4z6pf                  Container created
+kube-system   16m         Normal    Started                   pod/aws-node-4z6pf                  Container started
+kube-system   16m         Normal    Scheduled                 pod/aws-node-rbdz6                  Successfully assigned kube-system/aws-node-rbdz6 to ip-10-20-0-7.ec2.internal
+kube-system   16m         Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-rbdz6
+kube-system   16m         Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-rl5b2
+default       16m         Normal    Synced                    node/ip-10-20-0-7.ec2.internal      Node synced successfully
+kube-system   16m         Normal    Pulled                    pod/aws-node-4z6pf                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.294s (1.294s including waiting). Image size: 34374447 bytes.
+kube-system   16m         Normal    Created                   pod/aws-node-4z6pf                  Container created
+kube-system   16m         Normal    Started                   pod/aws-node-4z6pf                  Container started
+kube-system   16m         Normal    Created                   pod/aws-node-jsrdh                  Container created
+kube-system   16m         Normal    Scheduled                 pod/kube-proxy-rl5b2                Successfully assigned kube-system/kube-proxy-rl5b2 to ip-10-20-0-7.ec2.internal
+kube-system   16m         Normal    Started                   pod/aws-node-jsrdh                  Container started
+kube-system   16m         Normal    Pulled                    pod/aws-node-jsrdh                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.344s (1.344s including waiting). Image size: 34374447 bytes.
+kube-system   16m         Normal    Scheduled                 pod/kube-proxy-8jmqq                Successfully assigned kube-system/kube-proxy-8jmqq to ip-10-20-0-55.ec2.internal
+default       16m         Normal    NodeReady                 node/ip-10-20-0-54.ec2.internal     Node ip-10-20-0-54.ec2.internal status is now: NodeReady
+kube-system   16m         Normal    Scheduled                 pod/aws-node-lnhq6                  Successfully assigned kube-system/aws-node-lnhq6 to ip-10-20-0-55.ec2.internal
+kube-system   16m         Normal    Pulling                   pod/aws-node-rbdz6                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+kube-system   16m         Normal    SuccessfulCreate          daemonset/aws-node                  Created pod: aws-node-lnhq6
+kube-system   16m         Normal    Pulling                   pod/kube-proxy-rl5b2                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+kube-system   16m         Normal    SuccessfulCreate          daemonset/kube-proxy                Created pod: kube-proxy-8jmqq
+default       16m         Normal    NodeReady                 node/ip-10-20-0-12.ec2.internal     Node ip-10-20-0-12.ec2.internal status is now: NodeReady
+kube-system   16m         Normal    Pulling                   pod/aws-node-lnhq6                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1"
+kube-system   16m         Normal    Pulling                   pod/kube-proxy-8jmqq                Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25"
+default       16m         Normal    Synced                    node/ip-10-20-0-55.ec2.internal     Node synced successfully
+default       16m         Normal    RegisteredNode            node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal event: Registered Node ip-10-20-0-7.ec2.internal in Controller
+default       16m         Normal    RegisteredNode            node/ip-10-20-0-55.ec2.internal     Node ip-10-20-0-55.ec2.internal event: Registered Node ip-10-20-0-55.ec2.internal in Controller
+kube-system   16m         Normal    Started                   pod/aws-node-rbdz6                  Container started
+kube-system   16m         Normal    Started                   pod/kube-proxy-rl5b2                Container started
+kube-system   16m         Normal    Pulled                    pod/kube-proxy-rl5b2                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 2.893s (2.893s including waiting). Image size: 35059164 bytes.
+kube-system   16m         Normal    Created                   pod/kube-proxy-rl5b2                Container created
+kube-system   16m         Normal    Pulled                    pod/aws-node-rbdz6                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.389s (3.389s including waiting). Image size: 79823548 bytes.
+kube-system   16m         Normal    Created                   pod/aws-node-rbdz6                  Container created
+kube-system   16m         Normal    Started                   pod/kube-proxy-8jmqq                Container started
+kube-system   16m         Normal    Pulled                    pod/kube-proxy-8jmqq                Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.36.0-eksbuild.25" in 2.811s (2.811s including waiting). Image size: 35059164 bytes.
+kube-system   16m         Normal    Created                   pod/kube-proxy-8jmqq                Container created
+kube-system   16m         Normal    Created                   pod/aws-node-lnhq6                  Container created
+kube-system   16m         Normal    Pulled                    pod/aws-node-lnhq6                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni-init:v1.23.2-eksbuild.1" in 3.304s (3.304s including waiting). Image size: 79823548 bytes.
+kube-system   16m         Normal    Started                   pod/aws-node-lnhq6                  Container started
+kube-system   16m         Normal    Pulling                   pod/aws-node-rbdz6                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+kube-system   16m         Normal    Pulled                    pod/aws-node-rbdz6                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 1.964s (1.964s including waiting). Image size: 61308187 bytes.
+kube-system   16m         Normal    Pulling                   pod/aws-node-lnhq6                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1"
+kube-system   16m         Normal    Created                   pod/aws-node-rbdz6                  Container created
+kube-system   16m         Normal    Started                   pod/aws-node-rbdz6                  Container started
+kube-system   16m         Normal    Pulling                   pod/aws-node-rbdz6                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   16m         Normal    Created                   pod/aws-node-rbdz6                  Container created
+kube-system   16m         Normal    Started                   pod/aws-node-rbdz6                  Container started
+kube-system   16m         Normal    Pulled                    pod/aws-node-rbdz6                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.348s (1.348s including waiting). Image size: 34374447 bytes.
+kube-system   16m         Normal    Started                   pod/aws-node-lnhq6                  Container started
+kube-system   16m         Normal    Created                   pod/aws-node-lnhq6                  Container created
+kube-system   16m         Normal    Pulled                    pod/aws-node-lnhq6                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.23.2-eksbuild.1" in 2.018s (2.018s including waiting). Image size: 61308187 bytes.
+kube-system   16m         Normal    Pulling                   pod/aws-node-lnhq6                  Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1"
+kube-system   16m         Normal    Created                   pod/aws-node-lnhq6                  Container created
+kube-system   16m         Normal    Pulled                    pod/aws-node-lnhq6                  Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/amazon/aws-network-policy-agent:v1.4.3-eksbuild.1" in 1.268s (1.268s including waiting). Image size: 34374447 bytes.
+kube-system   16m         Normal    Started                   pod/aws-node-lnhq6                  Container started
+default       16m         Normal    NodeReady                 node/ip-10-20-0-7.ec2.internal      Node ip-10-20-0-7.ec2.internal status is now: NodeReady
+default       16m         Normal    NodeReady                 node/ip-10-20-0-55.ec2.internal     Node ip-10-20-0-55.ec2.internal status is now: NodeReady
+kube-system   16m         Normal    ScalingReplicaSet         deployment/coredns                  Scaled up replica set coredns-79f8dffc57 from 0 to 2
+kube-system   16m         Normal    NoPods                    poddisruptionbudget/coredns         No matching pods found
+kube-system   16m         Normal    Pulling                   pod/coredns-79f8dffc57-564ph        Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4"
+kube-system   16m         Normal    Scheduled                 pod/coredns-79f8dffc57-4b29v        Successfully assigned kube-system/coredns-79f8dffc57-4b29v to ip-10-20-0-7.ec2.internal
+kube-system   16m         Normal    Pulling                   pod/coredns-79f8dffc57-4b29v        Pulling image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4"
+kube-system   16m         Normal    SuccessfulCreate          replicaset/coredns-79f8dffc57       Created pod: coredns-79f8dffc57-4b29v
+kube-system   16m         Normal    SuccessfulCreate          replicaset/coredns-79f8dffc57       Created pod: coredns-79f8dffc57-564ph
+kube-system   16m         Normal    Scheduled                 pod/coredns-79f8dffc57-564ph        Successfully assigned kube-system/coredns-79f8dffc57-564ph to ip-10-20-0-55.ec2.internal
+kube-system   16m         Normal    Pulled                    pod/coredns-79f8dffc57-4b29v        Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4" in 1.245s (1.245s including waiting). Image size: 25301553 bytes.
+kube-system   16m         Normal    Created                   pod/coredns-79f8dffc57-4b29v        Container created
+kube-system   16m         Normal    Pulled                    pod/coredns-79f8dffc57-564ph        Successfully pulled image "111122223333.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.14.6-eksbuild.4" in 1.327s (1.327s including waiting). Image size: 25301553 bytes.
+kube-system   16m         Normal    Created                   pod/coredns-79f8dffc57-564ph        Container created
+kube-system   16m         Normal    Started                   pod/coredns-79f8dffc57-564ph        Container started
+kube-system   16m         Warning   Unhealthy                 pod/coredns-79f8dffc57-564ph        Readiness probe failed: Get "http://10.20.0.38:8181/ready": dial tcp 10.20.0.38:8181: connect: connection refused
+kube-system   16m         Warning   Unhealthy                 pod/coredns-79f8dffc57-4b29v        Readiness probe failed: Get "http://10.20.0.21:8181/ready": dial tcp 10.20.0.21:8181: connect: connection refused
+kube-system   16m         Normal    Started                   pod/coredns-79f8dffc57-4b29v        Container started
+default       14m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-hkrf4
+default       14m         Normal    Scheduled                 pod/pause-68d5b89fc-pjwpq           Successfully assigned default/pause-68d5b89fc-pjwpq to ip-10-20-0-12.ec2.internal
+default       14m         Normal    Scheduled                 pod/pause-68d5b89fc-hkrf4           Successfully assigned default/pause-68d5b89fc-hkrf4 to ip-10-20-0-7.ec2.internal
+default       14m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-qdjvt
+default       14m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-jgtf6
+default       14m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-6jb5l
+default       14m         Normal    Scheduled                 pod/pause-68d5b89fc-6jb5l           Successfully assigned default/pause-68d5b89fc-6jb5l to ip-10-20-0-55.ec2.internal
+default       14m         Normal    Scheduled                 pod/pause-68d5b89fc-jgtf6           Successfully assigned default/pause-68d5b89fc-jgtf6 to ip-10-20-0-54.ec2.internal
+default       14m         Normal    Scheduled                 pod/pause-68d5b89fc-qdjvt           Successfully assigned default/pause-68d5b89fc-qdjvt to ip-10-20-0-12.ec2.internal
+default       14m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-pjwpq
+default       14m         Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 0 to 5
+default       14m         Normal    Pulled                    pod/pause-68d5b89fc-qdjvt           Successfully pulled image "registry.k8s.io/pause:3.10" in 356ms (356ms including waiting). Image size: 320368 bytes.
+default       14m         Normal    Started                   pod/pause-68d5b89fc-6jb5l           Container started
+default       14m         Normal    Pulling                   pod/pause-68d5b89fc-pjwpq           Pulling image "registry.k8s.io/pause:3.10"
+default       14m         Normal    Pulled                    pod/pause-68d5b89fc-pjwpq           Successfully pulled image "registry.k8s.io/pause:3.10" in 337ms (337ms including waiting). Image size: 320368 bytes.
+default       14m         Normal    Created                   pod/pause-68d5b89fc-pjwpq           Container created
+default       14m         Normal    Started                   pod/pause-68d5b89fc-pjwpq           Container started
+default       14m         Normal    Pulling                   pod/pause-68d5b89fc-6jb5l           Pulling image "registry.k8s.io/pause:3.10"
+default       14m         Normal    Pulled                    pod/pause-68d5b89fc-6jb5l           Successfully pulled image "registry.k8s.io/pause:3.10" in 349ms (349ms including waiting). Image size: 320368 bytes.
+default       14m         Normal    Created                   pod/pause-68d5b89fc-6jb5l           Container created
+default       14m         Normal    Started                   pod/pause-68d5b89fc-jgtf6           Container started
+default       14m         Normal    Created                   pod/pause-68d5b89fc-jgtf6           Container created
+default       14m         Normal    Started                   pod/pause-68d5b89fc-qdjvt           Container started
+default       14m         Normal    Created                   pod/pause-68d5b89fc-qdjvt           Container created
+default       14m         Normal    Pulled                    pod/pause-68d5b89fc-jgtf6           Successfully pulled image "registry.k8s.io/pause:3.10" in 357ms (357ms including waiting). Image size: 320368 bytes.
+default       14m         Normal    Pulling                   pod/pause-68d5b89fc-qdjvt           Pulling image "registry.k8s.io/pause:3.10"
+default       14m         Normal    Pulling                   pod/pause-68d5b89fc-jgtf6           Pulling image "registry.k8s.io/pause:3.10"
+default       14m         Normal    Pulling                   pod/pause-68d5b89fc-hkrf4           Pulling image "registry.k8s.io/pause:3.10"
+default       14m         Normal    Pulled                    pod/pause-68d5b89fc-hkrf4           Successfully pulled image "registry.k8s.io/pause:3.10" in 364ms (364ms including waiting). Image size: 320368 bytes.
+default       14m         Normal    Created                   pod/pause-68d5b89fc-hkrf4           Container created
+default       14m         Normal    Started                   pod/pause-68d5b89fc-hkrf4           Container started
+default       13m         Normal    Scheduled                 pod/pause-68d5b89fc-bpcpx           Successfully assigned default/pause-68d5b89fc-bpcpx to ip-10-20-0-54.ec2.internal
+default       13m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-bvs82
+default       13m         Normal    Scheduled                 pod/pause-68d5b89fc-d4dfw           Successfully assigned default/pause-68d5b89fc-d4dfw to ip-10-20-0-54.ec2.internal
+default       13m         Normal    Scheduled                 pod/pause-68d5b89fc-qv69p           Successfully assigned default/pause-68d5b89fc-qv69p to ip-10-20-0-7.ec2.internal
+default       13m         Normal    Scheduled                 pod/pause-68d5b89fc-qw66c           Successfully assigned default/pause-68d5b89fc-qw66c to ip-10-20-0-12.ec2.internal
+default       13m         Normal    Scheduled                 pod/pause-68d5b89fc-bvs82           Successfully assigned default/pause-68d5b89fc-bvs82 to ip-10-20-0-55.ec2.internal
+default       13m         Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 5 to 10
+default       13m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-qw66c
+default       13m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-bpcpx
+default       13m         Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          Created pod: pause-68d5b89fc-qv69p
+default       13m         Normal    Created                   pod/pause-68d5b89fc-bpcpx           Container created
+default       13m         Normal    Created                   pod/pause-68d5b89fc-d4dfw           Container created
+default       13m         Normal    Pulled                    pod/pause-68d5b89fc-bvs82           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       13m         Normal    Created                   pod/pause-68d5b89fc-qv69p           Container created
+default       13m         Normal    Started                   pod/pause-68d5b89fc-qv69p           Container started
+default       13m         Normal    Pulled                    pod/pause-68d5b89fc-qw66c           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       13m         Normal    Created                   pod/pause-68d5b89fc-qw66c           Container created
+default       13m         Normal    Started                   pod/pause-68d5b89fc-qw66c           Container started
+default       13m         Normal    Started                   pod/pause-68d5b89fc-bpcpx           Container started
+default       13m         Normal    Pulled                    pod/pause-68d5b89fc-bpcpx           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       13m         Normal    Started                   pod/pause-68d5b89fc-d4dfw           Container started
+default       13m         Normal    Created                   pod/pause-68d5b89fc-bvs82           Container created
+default       13m         Normal    Pulled                    pod/pause-68d5b89fc-d4dfw           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       13m         Normal    Pulled                    pod/pause-68d5b89fc-qv69p           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       13m         Normal    Started                   pod/pause-68d5b89fc-bvs82           Container started
+default       11m         Normal    Scheduled                 pod/pause-68d5b89fc-ckr4k           Successfully assigned default/pause-68d5b89fc-ckr4k to ip-10-20-0-54.ec2.internal
+default       11m         Normal    Scheduled                 pod/pause-68d5b89fc-cj8gs           Successfully assigned default/pause-68d5b89fc-cj8gs to ip-10-20-0-7.ec2.internal
+default       11m         Normal    Scheduled                 pod/pause-68d5b89fc-b9sch           Successfully assigned default/pause-68d5b89fc-b9sch to ip-10-20-0-55.ec2.internal
+default       11m         Normal    Scheduled                 pod/pause-68d5b89fc-fq4vq           Successfully assigned default/pause-68d5b89fc-fq4vq to ip-10-20-0-55.ec2.internal
+default       11m         Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 10 to 15
+default       11m         Normal    Scheduled                 pod/pause-68d5b89fc-5r77c           Successfully assigned default/pause-68d5b89fc-5r77c to ip-10-20-0-12.ec2.internal
+default       11m         Normal    Created                   pod/pause-68d5b89fc-ckr4k           Container created
+default       11m         Normal    Pulled                    pod/pause-68d5b89fc-fq4vq           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       11m         Normal    Created                   pod/pause-68d5b89fc-b9sch           Container created
+default       11m         Normal    Pulled                    pod/pause-68d5b89fc-cj8gs           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       11m         Normal    Created                   pod/pause-68d5b89fc-cj8gs           Container created
+default       11m         Normal    Started                   pod/pause-68d5b89fc-cj8gs           Container started
+default       11m         Normal    Pulled                    pod/pause-68d5b89fc-b9sch           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       11m         Normal    Pulled                    pod/pause-68d5b89fc-ckr4k           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       11m         Normal    Pulled                    pod/pause-68d5b89fc-5r77c           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       11m         Normal    Started                   pod/pause-68d5b89fc-ckr4k           Container started
+default       11m         Normal    Created                   pod/pause-68d5b89fc-5r77c           Container created
+default       11m         Normal    Started                   pod/pause-68d5b89fc-5r77c           Container started
+default       11m         Normal    Started                   pod/pause-68d5b89fc-b9sch           Container started
+default       11m         Normal    Started                   pod/pause-68d5b89fc-fq4vq           Container started
+default       11m         Normal    Created                   pod/pause-68d5b89fc-fq4vq           Container created
+default       10m         Normal    Created                   pod/pause-68d5b89fc-grdnh           Container created
+default       10m         Normal    Pulled                    pod/pause-68d5b89fc-7ch2h           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       10m         Normal    Started                   pod/pause-68d5b89fc-7gc9z           Container started
+default       10m         Normal    Pulled                    pod/pause-68d5b89fc-7gc9z           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       10m         Normal    Created                   pod/pause-68d5b89fc-7gc9z           Container created
+default       10m         Normal    Started                   pod/pause-68d5b89fc-csmm9           Container started
+default       10m         Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 15 to 20
+default       10m         Normal    Created                   pod/pause-68d5b89fc-7ch2h           Container created
+default       10m         Normal    Scheduled                 pod/pause-68d5b89fc-grdnh           Successfully assigned default/pause-68d5b89fc-grdnh to ip-10-20-0-55.ec2.internal
+default       10m         Normal    Pulled                    pod/pause-68d5b89fc-grdnh           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       10m         Normal    Created                   pod/pause-68d5b89fc-csmm9           Container created
+default       10m         Normal    Scheduled                 pod/pause-68d5b89fc-csmm9           Successfully assigned default/pause-68d5b89fc-csmm9 to ip-10-20-0-12.ec2.internal
+default       10m         Normal    Pulled                    pod/pause-68d5b89fc-csmm9           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       10m         Normal    Scheduled                 pod/pause-68d5b89fc-7ch2h           Successfully assigned default/pause-68d5b89fc-7ch2h to ip-10-20-0-7.ec2.internal
+default       10m         Normal    Scheduled                 pod/pause-68d5b89fc-7gc9z           Successfully assigned default/pause-68d5b89fc-7gc9z to ip-10-20-0-54.ec2.internal
+default       10m         Normal    Scheduled                 pod/pause-68d5b89fc-xw2vb           Successfully assigned default/pause-68d5b89fc-xw2vb to ip-10-20-0-7.ec2.internal
+default       10m         Normal    Pulled                    pod/pause-68d5b89fc-xw2vb           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       10m         Normal    Created                   pod/pause-68d5b89fc-xw2vb           Container created
+default       10m         Normal    Started                   pod/pause-68d5b89fc-xw2vb           Container started
+default       10m         Normal    Started                   pod/pause-68d5b89fc-grdnh           Container started
+default       10m         Normal    Started                   pod/pause-68d5b89fc-7ch2h           Container started
+default       9m32s       Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 20 to 25
+default       9m32s       Normal    Scheduled                 pod/pause-68d5b89fc-4vsbr           Successfully assigned default/pause-68d5b89fc-4vsbr to ip-10-20-0-12.ec2.internal
+default       9m32s       Normal    Scheduled                 pod/pause-68d5b89fc-4sxhn           Successfully assigned default/pause-68d5b89fc-4sxhn to ip-10-20-0-54.ec2.internal
+default       9m32s       Normal    Scheduled                 pod/pause-68d5b89fc-nk7md           Successfully assigned default/pause-68d5b89fc-nk7md to ip-10-20-0-55.ec2.internal
+default       9m31s       Normal    Created                   pod/pause-68d5b89fc-gtqb2           Container created
+default       9m31s       Normal    Pulled                    pod/pause-68d5b89fc-gs24r           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       9m31s       Normal    Created                   pod/pause-68d5b89fc-4sxhn           Container created
+default       9m31s       Normal    Pulled                    pod/pause-68d5b89fc-4vsbr           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       9m31s       Normal    Started                   pod/pause-68d5b89fc-gs24r           Container started
+default       9m31s       Normal    Created                   pod/pause-68d5b89fc-4vsbr           Container created
+default       9m31s       Normal    Started                   pod/pause-68d5b89fc-4sxhn           Container started
+default       9m31s       Normal    Started                   pod/pause-68d5b89fc-gtqb2           Container started
+default       9m31s       Normal    Created                   pod/pause-68d5b89fc-gs24r           Container created
+default       9m31s       Normal    Scheduled                 pod/pause-68d5b89fc-gtqb2           Successfully assigned default/pause-68d5b89fc-gtqb2 to ip-10-20-0-12.ec2.internal
+default       9m31s       Normal    Pulled                    pod/pause-68d5b89fc-gtqb2           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       9m31s       Normal    Started                   pod/pause-68d5b89fc-4vsbr           Container started
+default       9m31s       Normal    Pulled                    pod/pause-68d5b89fc-4sxhn           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       9m31s       Normal    Pulled                    pod/pause-68d5b89fc-nk7md           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       9m31s       Normal    Created                   pod/pause-68d5b89fc-nk7md           Container created
+default       9m31s       Normal    Started                   pod/pause-68d5b89fc-nk7md           Container started
+default       9m31s       Normal    Scheduled                 pod/pause-68d5b89fc-gs24r           Successfully assigned default/pause-68d5b89fc-gs24r to ip-10-20-0-7.ec2.internal
+default       8m20s       Normal    Scheduled                 pod/pause-68d5b89fc-dht4v           Successfully assigned default/pause-68d5b89fc-dht4v to ip-10-20-0-7.ec2.internal
+default       8m20s       Normal    Scheduled                 pod/pause-68d5b89fc-gmthp           Successfully assigned default/pause-68d5b89fc-gmthp to ip-10-20-0-55.ec2.internal
+default       8m20s       Normal    Scheduled                 pod/pause-68d5b89fc-6f222           Successfully assigned default/pause-68d5b89fc-6f222 to ip-10-20-0-54.ec2.internal
+default       8m20s       Normal    Scheduled                 pod/pause-68d5b89fc-nm7b6           Successfully assigned default/pause-68d5b89fc-nm7b6 to ip-10-20-0-12.ec2.internal
+default       8m20s       Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 25 to 30
+default       8m19s       Normal    Started                   pod/pause-68d5b89fc-nm7b6           Container started
+default       8m19s       Normal    Started                   pod/pause-68d5b89fc-gmthp           Container started
+default       8m19s       Normal    Started                   pod/pause-68d5b89fc-dht4v           Container started
+default       8m19s       Normal    Pulled                    pod/pause-68d5b89fc-nm7b6           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       8m19s       Normal    Created                   pod/pause-68d5b89fc-nm7b6           Container created
+default       8m19s       Normal    Created                   pod/pause-68d5b89fc-dht4v           Container created
+default       8m19s       Normal    Pulled                    pod/pause-68d5b89fc-dht4v           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       8m19s       Normal    Pulled                    pod/pause-68d5b89fc-6f222           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       8m19s       Normal    Started                   pod/pause-68d5b89fc-pd798           Container started
+default       8m19s       Normal    Pulled                    pod/pause-68d5b89fc-gmthp           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       8m19s       Normal    Created                   pod/pause-68d5b89fc-gmthp           Container created
+default       8m19s       Normal    Started                   pod/pause-68d5b89fc-6f222           Container started
+default       8m19s       Normal    Scheduled                 pod/pause-68d5b89fc-pd798           Successfully assigned default/pause-68d5b89fc-pd798 to ip-10-20-0-54.ec2.internal
+default       8m19s       Normal    Pulled                    pod/pause-68d5b89fc-pd798           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       8m19s       Normal    Created                   pod/pause-68d5b89fc-pd798           Container created
+default       8m19s       Normal    Created                   pod/pause-68d5b89fc-6f222           Container created
+default       7m6s        Normal    Scheduled                 pod/pause-68d5b89fc-whvlv           Successfully assigned default/pause-68d5b89fc-whvlv to ip-10-20-0-55.ec2.internal
+default       7m6s        Normal    Created                   pod/pause-68d5b89fc-pncz5           Container created
+default       7m6s        Normal    Started                   pod/pause-68d5b89fc-9rrkj           Container started
+default       7m6s        Normal    Created                   pod/pause-68d5b89fc-9rrkj           Container created
+default       7m6s        Normal    Pulled                    pod/pause-68d5b89fc-9rrkj           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       7m6s        Normal    Scheduled                 pod/pause-68d5b89fc-pncz5           Successfully assigned default/pause-68d5b89fc-pncz5 to ip-10-20-0-12.ec2.internal
+default       7m6s        Normal    Scheduled                 pod/pause-68d5b89fc-qmcnb           Successfully assigned default/pause-68d5b89fc-qmcnb to ip-10-20-0-55.ec2.internal
+default       7m6s        Normal    Pulled                    pod/pause-68d5b89fc-qmcnb           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       7m6s        Normal    Pulled                    pod/pause-68d5b89fc-pncz5           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       7m6s        Normal    Created                   pod/pause-68d5b89fc-qmcnb           Container created
+default       7m6s        Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 30 to 35
+default       7m6s        Normal    Started                   pod/pause-68d5b89fc-q2xjt           Container started
+default       7m6s        Normal    Created                   pod/pause-68d5b89fc-q2xjt           Container created
+default       7m6s        Normal    Scheduled                 pod/pause-68d5b89fc-q2xjt           Successfully assigned default/pause-68d5b89fc-q2xjt to ip-10-20-0-7.ec2.internal
+default       7m6s        Normal    Pulled                    pod/pause-68d5b89fc-q2xjt           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       7m6s        Normal    Started                   pod/pause-68d5b89fc-qmcnb           Container started
+default       7m6s        Normal    Scheduled                 pod/pause-68d5b89fc-9rrkj           Successfully assigned default/pause-68d5b89fc-9rrkj to ip-10-20-0-54.ec2.internal
+default       7m6s        Normal    Pulled                    pod/pause-68d5b89fc-whvlv           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       7m6s        Normal    Created                   pod/pause-68d5b89fc-whvlv           Container created
+default       7m5s        Normal    Started                   pod/pause-68d5b89fc-pncz5           Container started
+default       7m5s        Normal    Started                   pod/pause-68d5b89fc-whvlv           Container started
+default       5m59s       Normal    Scheduled                 pod/pause-68d5b89fc-qdw46           Successfully assigned default/pause-68d5b89fc-qdw46 to ip-10-20-0-54.ec2.internal
+default       5m59s       Normal    Scheduled                 pod/pause-68d5b89fc-fx84n           Successfully assigned default/pause-68d5b89fc-fx84n to ip-10-20-0-12.ec2.internal
+default       5m59s       Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 35 to 40
+default       5m59s       Normal    Scheduled                 pod/pause-68d5b89fc-sb9b9           Successfully assigned default/pause-68d5b89fc-sb9b9 to ip-10-20-0-7.ec2.internal
+default       5m58s       Normal    Started                   pod/pause-68d5b89fc-sb9b9           Container started
+default       5m58s       Normal    Scheduled                 pod/pause-68d5b89fc-2nxl4           Successfully assigned default/pause-68d5b89fc-2nxl4 to ip-10-20-0-55.ec2.internal
+default       5m58s       Normal    Created                   pod/pause-68d5b89fc-2nxl4           Container created
+default       5m58s       Normal    Pulled                    pod/pause-68d5b89fc-fx84n           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       5m58s       Normal    Pulled                    pod/pause-68d5b89fc-qdw46           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       5m58s       Normal    Pulled                    pod/pause-68d5b89fc-2nxl4           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       5m58s       Normal    Pulled                    pod/pause-68d5b89fc-sb9b9           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       5m58s       Normal    Created                   pod/pause-68d5b89fc-sb9b9           Container created
+default       5m58s       Normal    Started                   pod/pause-68d5b89fc-dwnb8           Container started
+default       5m58s       Normal    Started                   pod/pause-68d5b89fc-qdw46           Container started
+default       5m58s       Normal    Pulled                    pod/pause-68d5b89fc-dwnb8           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       5m58s       Normal    Scheduled                 pod/pause-68d5b89fc-dwnb8           Successfully assigned default/pause-68d5b89fc-dwnb8 to ip-10-20-0-7.ec2.internal
+default       5m58s       Normal    Created                   pod/pause-68d5b89fc-fx84n           Container created
+default       5m58s       Normal    Started                   pod/pause-68d5b89fc-fx84n           Container started
+default       5m58s       Normal    Created                   pod/pause-68d5b89fc-dwnb8           Container created
+default       5m58s       Normal    Started                   pod/pause-68d5b89fc-2nxl4           Container started
+default       5m58s       Normal    Created                   pod/pause-68d5b89fc-qdw46           Container created
+default       4m50s       Normal    Scheduled                 pod/pause-68d5b89fc-7h4zg           Successfully assigned default/pause-68d5b89fc-7h4zg to ip-10-20-0-7.ec2.internal
+default       4m50s       Normal    Scheduled                 pod/pause-68d5b89fc-xglpf           Successfully assigned default/pause-68d5b89fc-xglpf to ip-10-20-0-54.ec2.internal
+default       4m50s       Normal    ScalingReplicaSet         deployment/pause                    Scaled up replica set pause-68d5b89fc from 40 to 45
+default       4m50s       Normal    Scheduled                 pod/pause-68d5b89fc-g5jvj           Successfully assigned default/pause-68d5b89fc-g5jvj to ip-10-20-0-55.ec2.internal
+default       4m50s       Normal    Scheduled                 pod/pause-68d5b89fc-qhnnj           Successfully assigned default/pause-68d5b89fc-qhnnj to ip-10-20-0-12.ec2.internal
+default       4m50s       Normal    Scheduled                 pod/pause-68d5b89fc-bwlck           Successfully assigned default/pause-68d5b89fc-bwlck to ip-10-20-0-12.ec2.internal
+default       4m49s       Normal    Created                   pod/pause-68d5b89fc-7h4zg           Container created
+default       4m49s       Normal    Pulled                    pod/pause-68d5b89fc-qhnnj           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       4m49s       Normal    Started                   pod/pause-68d5b89fc-7h4zg           Container started
+default       4m49s       Normal    Created                   pod/pause-68d5b89fc-g5jvj           Container created
+default       4m49s       Normal    Pulled                    pod/pause-68d5b89fc-7h4zg           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       4m49s       Normal    Created                   pod/pause-68d5b89fc-xglpf           Container created
+default       4m49s       Normal    Created                   pod/pause-68d5b89fc-qhnnj           Container created
+default       4m49s       Normal    Started                   pod/pause-68d5b89fc-xglpf           Container started
+default       4m49s       Normal    Started                   pod/pause-68d5b89fc-bwlck           Container started
+default       4m49s       Normal    Created                   pod/pause-68d5b89fc-bwlck           Container created
+default       4m49s       Normal    Pulled                    pod/pause-68d5b89fc-bwlck           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       4m49s       Normal    Pulled                    pod/pause-68d5b89fc-xglpf           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       4m49s       Normal    Started                   pod/pause-68d5b89fc-g5jvj           Container started
+default       4m49s       Normal    Pulled                    pod/pause-68d5b89fc-g5jvj           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       4m49s       Normal    Started                   pod/pause-68d5b89fc-qhnnj           Container started
+default       3m40s       Normal    Scheduled                 pod/pause-68d5b89fc-p46v5           Successfully assigned default/pause-68d5b89fc-p46v5 to ip-10-20-0-54.ec2.internal
+default       3m40s       Normal    Started                   pod/pause-68d5b89fc-qnffx           Container started
+default       3m40s       Normal    Scheduled                 pod/pause-68d5b89fc-np24j           Successfully assigned default/pause-68d5b89fc-np24j to ip-10-20-0-7.ec2.internal
+default       3m40s       Normal    Pulled                    pod/pause-68d5b89fc-p46v5           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       3m40s       Normal    Created                   pod/pause-68d5b89fc-qnffx           Container created
+default       3m40s       Normal    Started                   pod/pause-68d5b89fc-np24j           Container started
+default       3m40s       Normal    Pulled                    pod/pause-68d5b89fc-qnffx           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       3m40s       Normal    SuccessfulCreate          replicaset/pause-68d5b89fc          (combined from similar events): Created pod: pause-68d5b89fc-jjrqs
+default       3m40s       Normal    Scheduled                 pod/pause-68d5b89fc-qnffx           Successfully assigned default/pause-68d5b89fc-qnffx to ip-10-20-0-12.ec2.internal
+default       3m40s       Normal    Scheduled                 pod/pause-68d5b89fc-jjrqs           Successfully assigned default/pause-68d5b89fc-jjrqs to ip-10-20-0-54.ec2.internal
+default       3m40s       Normal    Scheduled                 pod/pause-68d5b89fc-v4wg4           Successfully assigned default/pause-68d5b89fc-v4wg4 to ip-10-20-0-55.ec2.internal
+default       3m40s       Normal    Started                   pod/pause-68d5b89fc-jjrqs           Container started
+default       3m40s       Normal    Pulled                    pod/pause-68d5b89fc-v4wg4           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       3m40s       Normal    Created                   pod/pause-68d5b89fc-v4wg4           Container created
+default       3m40s       Normal    Pulled                    pod/pause-68d5b89fc-np24j           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       3m40s       Normal    Started                   pod/pause-68d5b89fc-v4wg4           Container started
+default       3m40s       Normal    Pulled                    pod/pause-68d5b89fc-jjrqs           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       3m40s       Normal    Created                   pod/pause-68d5b89fc-jjrqs           Container created
+default       3m40s       Normal    Created                   pod/pause-68d5b89fc-np24j           Container created
+default       3m39s       Normal    Started                   pod/pause-68d5b89fc-p46v5           Container started
+default       3m39s       Normal    Created                   pod/pause-68d5b89fc-p46v5           Container created
+default       2m31s       Normal    Created                   pod/pause-68d5b89fc-98svn           Container created
+default       2m31s       Normal    Pulled                    pod/pause-68d5b89fc-fwhmc           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       2m31s       Normal    Pulled                    pod/pause-68d5b89fc-n8cb7           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       2m31s       Normal    Created                   pod/pause-68d5b89fc-n8cb7           Container created
+default       2m31s       Normal    Created                   pod/pause-68d5b89fc-26jnc           Container created
+default       2m31s       Normal    Scheduled                 pod/pause-68d5b89fc-98svn           Successfully assigned default/pause-68d5b89fc-98svn to ip-10-20-0-54.ec2.internal
+default       2m31s       Normal    Pulled                    pod/pause-68d5b89fc-98svn           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       2m31s       Normal    Started                   pod/pause-68d5b89fc-98svn           Container started
+default       2m31s       Normal    Created                   pod/pause-68d5b89fc-fwhmc           Container created
+default       2m31s       Normal    Scheduled                 pod/pause-68d5b89fc-n8cb7           Successfully assigned default/pause-68d5b89fc-n8cb7 to ip-10-20-0-55.ec2.internal
+default       2m31s       Normal    Scheduled                 pod/pause-68d5b89fc-fwhmc           Successfully assigned default/pause-68d5b89fc-fwhmc to ip-10-20-0-12.ec2.internal
+default       2m31s       Normal    Started                   pod/pause-68d5b89fc-fwhmc           Container started
+default       2m31s       Normal    Started                   pod/pause-68d5b89fc-n8cb7           Container started
+default       2m31s       Normal    Started                   pod/pause-68d5b89fc-522bj           Container started
+default       2m31s       Normal    Created                   pod/pause-68d5b89fc-522bj           Container created
+default       2m31s       Normal    Pulled                    pod/pause-68d5b89fc-522bj           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       2m31s       Normal    Scheduled                 pod/pause-68d5b89fc-522bj           Successfully assigned default/pause-68d5b89fc-522bj to ip-10-20-0-7.ec2.internal
+default       2m31s       Normal    Pulled                    pod/pause-68d5b89fc-26jnc           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       2m31s       Normal    Scheduled                 pod/pause-68d5b89fc-26jnc           Successfully assigned default/pause-68d5b89fc-26jnc to ip-10-20-0-55.ec2.internal
+default       2m30s       Normal    Started                   pod/pause-68d5b89fc-26jnc           Container started
+default       84s         Normal    Created                   pod/pause-68d5b89fc-pdvh6           Container created
+default       84s         Normal    Pulled                    pod/pause-68d5b89fc-qntt9           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       84s         Normal    Scheduled                 pod/pause-68d5b89fc-qntt9           Successfully assigned default/pause-68d5b89fc-qntt9 to ip-10-20-0-7.ec2.internal
+default       84s         Normal    Created                   pod/pause-68d5b89fc-qntt9           Container created
+default       84s         Normal    Started                   pod/pause-68d5b89fc-qntt9           Container started
+default       84s         Normal    Created                   pod/pause-68d5b89fc-dxvmd           Container created
+default       84s         Normal    Pulled                    pod/pause-68d5b89fc-dxvmd           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       84s         Normal    Scheduled                 pod/pause-68d5b89fc-dxvmd           Successfully assigned default/pause-68d5b89fc-dxvmd to ip-10-20-0-12.ec2.internal
+default       84s         Normal    ScalingReplicaSet         deployment/pause                    (combined from similar events): Scaled up replica set pause-68d5b89fc from 55 to 58
+default       84s         Normal    Started                   pod/pause-68d5b89fc-pdvh6           Container started
+default       84s         Normal    Pulled                    pod/pause-68d5b89fc-pdvh6           Container image "registry.k8s.io/pause:3.10" already present on machine and can be accessed by the pod
+default       84s         Normal    Scheduled                 pod/pause-68d5b89fc-pdvh6           Successfully assigned default/pause-68d5b89fc-pdvh6 to ip-10-20-0-54.ec2.internal
+default       83s         Normal    Started                   pod/pause-68d5b89fc-dxvmd           Container started

@@ -1,0 +1,4 @@
+{
+    "version": "v1.23.2-eksbuild.1",
+    "configuration": "{\"env\":{\"ENABLE_PREFIX_DELEGATION\":\"false\",\"MINIMUM_IP_TARGET\":\"5\",\"WARM_ENI_TARGET\":\"1\",\"WARM_IP_TARGET\":\"2\"}}"
+}

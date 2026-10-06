@@ -1,0 +1,558 @@
+Name:               ip-10-20-0-13.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-3b-prefix-pod-subnets
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE2
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=2
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1a
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-13.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az2
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1a
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.13
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 13:53:07 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-13.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 14:10:49 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 14:06:23 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 14:06:23 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 14:06:23 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 14:06:23 +0200   Mon, 05 Oct 2026 13:53:25 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.13
+  InternalDNS:  ip-10-20-0-13.ec2.internal
+  Hostname:     ip-10-20-0-13.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927964Ki
+  pods:               60
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372956Ki
+  pods:               60
+System Info:
+  Machine ID:                 ec2c8abf0c05bd3e6a90d2cbf00d0d75
+  System UUID:                ec2c8abf-0c05-bd3e-6a90-d2cbf00d0d75
+  Boot ID:                    0c95282d-625e-4da0-bbcf-4f5d03335f9e
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1a/i-EXAMPLE14
+Non-terminated Pods:          (60 in total)
+  Namespace                   Name                     CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                     ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-2rjn9    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m37s
+  default                     pause-68d5b89fc-496kp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      114s
+  default                     pause-68d5b89fc-4pmsf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-56xxj    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-5b59h    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m2s
+  default                     pause-68d5b89fc-5hdgz    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-5qzjt    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-65sww    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m53s
+  default                     pause-68d5b89fc-6nsml    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m20s
+  default                     pause-68d5b89fc-87x5l    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-8pkwm    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m20s
+  default                     pause-68d5b89fc-92fj2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m37s
+  default                     pause-68d5b89fc-9chc7    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m10s
+  default                     pause-68d5b89fc-9cswr    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m37s
+  default                     pause-68d5b89fc-b9rnx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-bdzms    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-bjqh7    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m37s
+  default                     pause-68d5b89fc-brr7j    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m2s
+  default                     pause-68d5b89fc-brz9h    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m27s
+  default                     pause-68d5b89fc-bvqrx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-c585r    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-cm7zn    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-fnm9h    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-g5c8z    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m28s
+  default                     pause-68d5b89fc-gnljg    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m53s
+  default                     pause-68d5b89fc-gr7jk    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m20s
+  default                     pause-68d5b89fc-h8v6s    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-hbf69    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m28s
+  default                     pause-68d5b89fc-j4g28    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-k5cvj    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-knql4    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      114s
+  default                     pause-68d5b89fc-ks7hs    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-kw78f    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-l2bld    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m28s
+  default                     pause-68d5b89fc-nf5gf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-njjb5    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  default                     pause-68d5b89fc-nmfm6    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m53s
+  default                     pause-68d5b89fc-nszll    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m2s
+  default                     pause-68d5b89fc-nwjzz    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m20s
+  default                     pause-68d5b89fc-nzdnr    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  default                     pause-68d5b89fc-qsjfx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m28s
+  default                     pause-68d5b89fc-s8gxl    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-sl55n    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m2s
+  default                     pause-68d5b89fc-t67tf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-tq5lc    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m37s
+  default                     pause-68d5b89fc-tz5rb    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-vbpr8    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m53s
+  default                     pause-68d5b89fc-vnfpb    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-vs7rm    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m53s
+  default                     pause-68d5b89fc-w7j6m    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m20s
+  default                     pause-68d5b89fc-wb6bv    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-x4pp2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-xms9n    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-xqprr    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-xxswc    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  default                     pause-68d5b89fc-zqqc4    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-zv6h7    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m2s
+  default                     pause-68d5b89fc-zxk9h    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  kube-system                 aws-node-x7v2r           50m (2%)      0 (0%)      0 (0%)           0 (0%)         17m
+  kube-system                 kube-proxy-lx2hn         100m (5%)     0 (0%)      0 (0%)           0 (0%)         17m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                440m (22%)   0 (0%)
+  memory             464Mi (14%)  928Mi (28%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+
+
+Name:               ip-10-20-0-36.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-3b-prefix-pod-subnets
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE2
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=2
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1b
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-36.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az4
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1b
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.36
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 13:53:07 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-36.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 14:10:51 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 14:07:26 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 14:07:26 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 14:07:26 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 14:07:26 +0200   Mon, 05 Oct 2026 13:53:26 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.36
+  InternalDNS:  ip-10-20-0-36.ec2.internal
+  Hostname:     ip-10-20-0-36.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927968Ki
+  pods:               60
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372960Ki
+  pods:               60
+System Info:
+  Machine ID:                 ec26a960b5fb2f0000a4b10a6a5d5c70
+  System UUID:                ec26a960-b5fb-2f00-00a4-b10a6a5d5c70
+  Boot ID:                    45fb8a77-983e-4320-9122-e5ae47bdbe7e
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1b/i-EXAMPLE15
+Non-terminated Pods:          (60 in total)
+  Namespace                   Name                     CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                     ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-2h84w    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-2lwvs    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  default                     pause-68d5b89fc-2zsxx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-5j9bh    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-5kttg    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-5w4gl    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-5xspn    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-6d5gt    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-6mpfq    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-6vc84    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-6xcdw    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  default                     pause-68d5b89fc-8fp7z    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-8xhlm    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-9nm9m    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-bf7rl    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-brxrx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-c4klw    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-cx67c    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-cxdtm    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-dqhx7    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-dr8bb    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-ftkwp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-fxpwv    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-gb5cn    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-gcs8c    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-glpbp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      115s
+  default                     pause-68d5b89fc-gnrrs    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m28s
+  default                     pause-68d5b89fc-k2qh4    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-k6tm6    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-k9bgl    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-kcr6m    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-kgtcx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-lcfhf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  default                     pause-68d5b89fc-lr4gj    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-n9rlg    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-n9zjs    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      115s
+  default                     pause-68d5b89fc-ntkzn    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-phhpd    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m28s
+  default                     pause-68d5b89fc-q8r8l    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-qbcpw    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-rxvff    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-s5z9g    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  default                     pause-68d5b89fc-s76vd    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-tslw7    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-tvmzm    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-v6g8q    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-vbc6x    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-wlgrj    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  default                     pause-68d5b89fc-wx9pp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-x2bbb    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-xdtgs    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-xtv6c    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-z6qvf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-z9wsq    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-zjvld    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-zrwn2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-zv5kp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-zx8xk    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  kube-system                 aws-node-lwhkt           50m (2%)      0 (0%)      0 (0%)           0 (0%)         17m
+  kube-system                 kube-proxy-wz8nz         100m (5%)     0 (0%)      0 (0%)           0 (0%)         17m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                440m (22%)   0 (0%)
+  memory             464Mi (14%)  928Mi (28%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+
+
+Name:               ip-10-20-0-39.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-3b-prefix-pod-subnets
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE2
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=2
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1b
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-39.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az4
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1b
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.39
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 13:53:08 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-39.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 14:10:51 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 14:09:25 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 14:09:25 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 14:09:25 +0200   Mon, 05 Oct 2026 13:53:04 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 14:09:25 +0200   Mon, 05 Oct 2026 13:53:27 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.39
+  InternalDNS:  ip-10-20-0-39.ec2.internal
+  Hostname:     ip-10-20-0-39.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927968Ki
+  pods:               60
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372960Ki
+  pods:               60
+System Info:
+  Machine ID:                 ec27d70f87cd43c644b554774c45299a
+  System UUID:                ec27d70f-87cd-43c6-44b5-54774c45299a
+  Boot ID:                    63bee211-84d7-4c9a-be23-9b15187387ed
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1b/i-EXAMPLE16
+Non-terminated Pods:          (60 in total)
+  Namespace                   Name                     CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                     ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-2gvgb    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-5ts6h    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-64r44    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-6hmqf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-74n7r    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  default                     pause-68d5b89fc-7mtqx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      115s
+  default                     pause-68d5b89fc-8b4c5    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-9bfgf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m28s
+  default                     pause-68d5b89fc-9g8l2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-9q29m    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-bzmvp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-c845q    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-ch7fv    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-ckvjx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      115s
+  default                     pause-68d5b89fc-f4swh    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-fgfx4    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-fl85k    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-fpksq    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-g9n7l    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-gs7vk    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m11s
+  default                     pause-68d5b89fc-gw6fp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-h574p    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-j2sc6    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-jhccn    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  default                     pause-68d5b89fc-kcmlw    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-kt6z9    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-kv9fd    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-l4dxm    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-l6wzf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-lbgnw    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-lcl66    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-ltrv2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-m4m89    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-mkf45    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-mrsn2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-msfx4    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-mwrlv    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-n8l72    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-nbdmv    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-ndwvg    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-nzqdh    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-plhpw    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-ptdbt    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m21s
+  default                     pause-68d5b89fc-q6bbb    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-qbffs    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m38s
+  default                     pause-68d5b89fc-qnfdm    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m3s
+  default                     pause-68d5b89fc-t499s    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  default                     pause-68d5b89fc-tz77q    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-vpvnf    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-vqstd    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-w2bkj    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-wphv2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-wtxv2    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-ww87n    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      115s
+  default                     pause-68d5b89fc-wxcj5    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m54s
+  default                     pause-68d5b89fc-xzsvq    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-z5clx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-zs2df    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  kube-system                 aws-node-w6gg7           50m (2%)      0 (0%)      0 (0%)           0 (0%)         17m
+  kube-system                 kube-proxy-n7p5j         100m (5%)     0 (0%)      0 (0%)           0 (0%)         17m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                440m (22%)   0 (0%)
+  memory             464Mi (14%)  928Mi (28%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+
+
+Name:               ip-10-20-0-6.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-3b-prefix-pod-subnets
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE2
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=2
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1a
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-6.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az2
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1a
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.6
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 13:53:04 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-6.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 14:10:48 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 14:09:01 +0200   Mon, 05 Oct 2026 13:52:59 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 14:09:01 +0200   Mon, 05 Oct 2026 13:52:59 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 14:09:01 +0200   Mon, 05 Oct 2026 13:52:59 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 14:09:01 +0200   Mon, 05 Oct 2026 13:53:21 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.6
+  InternalDNS:  ip-10-20-0-6.ec2.internal
+  Hostname:     ip-10-20-0-6.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927972Ki
+  pods:               60
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372964Ki
+  pods:               60
+System Info:
+  Machine ID:                 ec233586167547fe3973b4b4191a4408
+  System UUID:                ec233586-1675-47fe-3973-b4b4191a4408
+  Boot ID:                    2f1b4d4e-59ce-41eb-870c-ef1c02a6015f
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1a/i-EXAMPLE13
+Non-terminated Pods:          (60 in total)
+  Namespace                   Name                        CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                        ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-2jnmh       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-2nvhc       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-2x66s       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-4prnk       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-66lsz       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m29s
+  default                     pause-68d5b89fc-6h8qz       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-6mnd4       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-6tp7r       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-764kq       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-78vr6       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-8h9tl       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-9grts       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      116s
+  default                     pause-68d5b89fc-bqgbz       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-c7swd       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m4s
+  default                     pause-68d5b89fc-cv92q       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m55s
+  default                     pause-68d5b89fc-dcs6c       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m30s
+  default                     pause-68d5b89fc-dppqr       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-dvdxw       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m55s
+  default                     pause-68d5b89fc-dxqx7       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m39s
+  default                     pause-68d5b89fc-f4rtc       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m55s
+  default                     pause-68d5b89fc-fd2r7       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-fssqb       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      11m
+  default                     pause-68d5b89fc-ggkkl       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-gs9d9       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m4s
+  default                     pause-68d5b89fc-gshc5       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m22s
+  default                     pause-68d5b89fc-h5r5n       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m39s
+  default                     pause-68d5b89fc-hcvb7       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m39s
+  default                     pause-68d5b89fc-hhj7t       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-hml2w       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      116s
+  default                     pause-68d5b89fc-htcnc       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m13s
+  default                     pause-68d5b89fc-hx8pr       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-lltrn       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  default                     pause-68d5b89fc-lwrln       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      116s
+  default                     pause-68d5b89fc-mnjdj       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m13s
+  default                     pause-68d5b89fc-nx8wh       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-nxckz       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m39s
+  default                     pause-68d5b89fc-pk5jr       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m39s
+  default                     pause-68d5b89fc-rbnc8       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m55s
+  default                     pause-68d5b89fc-rfhw9       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m13s
+  default                     pause-68d5b89fc-s4r5m       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  default                     pause-68d5b89fc-sjzgc       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      4m12s
+  default                     pause-68d5b89fc-sr88x       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m30s
+  default                     pause-68d5b89fc-t4nqz       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m22s
+  default                     pause-68d5b89fc-t6cz2       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m4s
+  default                     pause-68d5b89fc-vjbsr       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m22s
+  default                     pause-68d5b89fc-w8k7l       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m22s
+  default                     pause-68d5b89fc-w98lp       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-wk8rj       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m4s
+  default                     pause-68d5b89fc-wqfqx       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      12m
+  default                     pause-68d5b89fc-wqjjh       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m30s
+  default                     pause-68d5b89fc-x6g8w       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m22s
+  default                     pause-68d5b89fc-xnhnv       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      13m
+  default                     pause-68d5b89fc-z9zf7       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m4s
+  default                     pause-68d5b89fc-zbds8       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      14m
+  default                     pause-68d5b89fc-zbnmp       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m55s
+  default                     pause-68d5b89fc-zhqh5       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      10m
+  kube-system                 aws-node-p2x9w              50m (2%)      0 (0%)      0 (0%)           0 (0%)         17m
+  kube-system                 coredns-79f8dffc57-8l56g    100m (5%)     0 (0%)      70Mi (2%)        170Mi (5%)     21m
+  kube-system                 coredns-79f8dffc57-zslqr    100m (5%)     0 (0%)      70Mi (2%)        170Mi (5%)     26m
+  kube-system                 kube-proxy-x5d5g            100m (5%)     0 (0%)      0 (0%)           0 (0%)         17m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                630m (32%)   0 (0%)
+  memory             588Mi (17%)  1236Mi (37%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
