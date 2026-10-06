@@ -1,0 +1,6 @@
+Installed /host/opt/cni/bin/aws-cni
+Installed /host/opt/cni/bin/egress-cni
+time="2026-10-05T11:19:14Z" level=info msg="Starting IPAM daemon... "
+time="2026-10-05T11:19:14Z" level=info msg="Checking for IPAM connectivity... "
+time="2026-10-05T11:19:17Z" level=info msg="Copying config file... "
+time="2026-10-05T11:19:17Z" level=info msg="Successfully copied CNI plugin binary and config file."

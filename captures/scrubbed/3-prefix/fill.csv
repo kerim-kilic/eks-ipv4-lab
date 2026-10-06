@@ -1,0 +1,6 @@
+time,replicas,running,ip_failures,unschedulable,pods_in_pod_cidr,node_subnet_free,pod_subnet_free,cni_total_ips,cni_assigned_ips,enis_in_node_subnets
+10:41:26,0,0,0,0,0,46,-,0,0,8
+10:42:34,10,0,10,0,0,48,-,0,0,6
+10:45:23,20,0,20,0,0,48,-,0,0,6
+10:46:29,30,0,30,0,0,48,-,0,0,6
+10:47:35,40,0,40,0,0,48,-,0,0,6

@@ -1,0 +1,8 @@
+awscni_assigned_ip_addresses 11
+awscni_aws_api_error_count{api="AssignPrivateIpAddresses",error="InsufficientFreeAddressesInSubnet"} 180
+awscni_eni_allocated 3
+awscni_eni_max 3
+awscni_ip_max 15
+awscni_ipamd_error_count{fn="increaseIPPoolAllocIPAddressesFailed"} 90
+awscni_no_available_ip_addresses 90
+awscni_total_ip_addresses 11

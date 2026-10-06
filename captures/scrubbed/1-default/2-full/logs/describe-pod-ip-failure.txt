@@ -1,0 +1,66 @@
+Name:             pause-68d5b89fc-zqq88
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-10-20-0-11.ec2.internal/10.20.0.11
+Start Time:       Mon, 05 Oct 2026 09:47:00 +0200
+Labels:           app=pause
+                  pod-template-hash=68d5b89fc
+                  topology.kubernetes.io/region=us-east-1
+                  topology.kubernetes.io/zone=us-east-1a
+Annotations:      <none>
+Status:           Pending
+IP:               
+IPs:              <none>
+Controlled By:    ReplicaSet/pause-68d5b89fc
+Containers:
+  pause:
+    Container ID:   
+    Image:          registry.k8s.io/pause:3.10
+    Image ID:       
+    Port:           <none>
+    Host Port:      <none>
+    State:          Waiting
+      Reason:       ContainerCreating
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      memory:  16Mi
+    Requests:
+      cpu:        5m
+      memory:     8Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-82428 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-82428:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason                  Age                   From               Message
+  ----     ------                  ----                  ----               -------
+  Normal   Scheduled               10m                   default-scheduler  Successfully assigned default/pause-68d5b89fc-zqq88 to ip-10-20-0-11.ec2.internal
+  Warning  FailedCreatePodSandBox  10m                   kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "930c7eda122e20973791dcf7bc460e59cb71a2387c6416a5e10eed499795920d": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  10m                   kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "514563dd394ae057b4f880aef591137746925cff17a9d293d751903ee7710d3a": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  10m                   kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "bd6a91cf3c088bdba93570b245387cf8a29d4c4ca9520d657836ace98f066ffd": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  10m                   kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "ebf7cd9ae564bc5f96f192cfe13db0e5e744840beab52c46f6ee22de60083122": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  9m53s                 kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "f8bb1abdf23f8c375140ad3a258e3f185c2a9c7566f0912809247710c5c80651": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  9m41s                 kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "7b9c555d383ed56a3804a17f44bd9d6f690005b3dddb81678f407407280945b5": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  9m30s                 kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "a437af9b288a4512918d4db05df44752de82cee98cd225ddc020ab516051d5a1": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  9m16s                 kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "7ea555c304aaea6aa90ae4b52ad02d67b024c298a29fe45c1a1840fa07ebb460": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  9m5s                  kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "d40f2bc883462d27590fcd33baeb1a5b11c7d73d988a191a9b8efdb221c6e23c": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  42s (x39 over 8m53s)  kubelet            (combined from similar events): Failed to create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "ce72073fe6064dbf51ca48371423ea5c0f6098c2557ab4f935d363257540a138": plugin type="aws-cni" name="aws-cni" failed (add): add cmd: failed to assign an IP address to container

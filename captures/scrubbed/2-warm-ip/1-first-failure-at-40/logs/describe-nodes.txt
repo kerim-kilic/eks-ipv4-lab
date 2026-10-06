@@ -1,0 +1,368 @@
+Name:               ip-10-20-0-21.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-2-warm-ip
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=1
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1a
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-21.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az2
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1a
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.21
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 10:08:29 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-21.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 10:20:33 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 10:15:28 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 10:15:28 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 10:15:28 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 10:15:28 +0200   Mon, 05 Oct 2026 10:08:42 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.21
+  InternalDNS:  ip-10-20-0-21.ec2.internal
+  Hostname:     ip-10-20-0-21.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927968Ki
+  pods:               17
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372960Ki
+  pods:               17
+System Info:
+  Machine ID:                 ec21b37d04657f6f53037a2c376c18e3
+  System UUID:                ec21b37d-0465-7f6f-5303-7a2c376c18e3
+  Boot ID:                    0e9bee05-7bed-4f95-92d9-01913639ff53
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1a/i-EXAMPLE7
+Non-terminated Pods:          (12 in total)
+  Namespace                   Name                     CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                     ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-5stql    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m3s
+  default                     pause-68d5b89fc-8b944    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m23s
+  default                     pause-68d5b89fc-fcl75    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      105s
+  default                     pause-68d5b89fc-h7f26    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      9m30s
+  default                     pause-68d5b89fc-n2hzp    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m10s
+  default                     pause-68d5b89fc-ngzjs    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m23s
+  default                     pause-68d5b89fc-p566w    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m57s
+  default                     pause-68d5b89fc-twptx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      2m51s
+  default                     pause-68d5b89fc-w52dh    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m16s
+  default                     pause-68d5b89fc-wr9n5    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m57s
+  kube-system                 aws-node-7p8q6           50m (2%)      0 (0%)      0 (0%)           0 (0%)         12m
+  kube-system                 kube-proxy-8vz8v         100m (5%)     0 (0%)      0 (0%)           0 (0%)         12m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                200m (10%)  0 (0%)
+  memory             80Mi (2%)   160Mi (4%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+
+
+Name:               ip-10-20-0-45.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-2-warm-ip
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=1
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1b
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-45.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az4
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1b
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.45
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 10:08:30 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-45.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 10:20:24 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 10:20:15 +0200   Mon, 05 Oct 2026 10:08:26 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 10:20:15 +0200   Mon, 05 Oct 2026 10:08:26 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 10:20:15 +0200   Mon, 05 Oct 2026 10:08:26 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 10:20:15 +0200   Mon, 05 Oct 2026 10:08:42 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.45
+  InternalDNS:  ip-10-20-0-45.ec2.internal
+  Hostname:     ip-10-20-0-45.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927968Ki
+  pods:               17
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372960Ki
+  pods:               17
+System Info:
+  Machine ID:                 ec200ef65bc9b056ea3c96e70ddd8ce1
+  System UUID:                ec200ef6-5bc9-b056-ea3c-96e70ddd8ce1
+  Boot ID:                    8b59542a-0215-4c42-955c-2bf1f0bf3bfc
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1b/i-EXAMPLE5
+Non-terminated Pods:          (12 in total)
+  Namespace                   Name                     CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                     ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-5kdt8    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m24s
+  default                     pause-68d5b89fc-6nx92    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      106s
+  default                     pause-68d5b89fc-bt676    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m17s
+  default                     pause-68d5b89fc-cjvmt    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m11s
+  default                     pause-68d5b89fc-jcr2s    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m4s
+  default                     pause-68d5b89fc-kjnks    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      9m31s
+  default                     pause-68d5b89fc-l95tb    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m58s
+  default                     pause-68d5b89fc-m8wrt    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m24s
+  default                     pause-68d5b89fc-s7fgw    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      2m52s
+  default                     pause-68d5b89fc-xj7bk    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      2m52s
+  kube-system                 aws-node-r6tgz           50m (2%)      0 (0%)      0 (0%)           0 (0%)         12m
+  kube-system                 kube-proxy-zrcbf         100m (5%)     0 (0%)      0 (0%)           0 (0%)         12m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                200m (10%)  0 (0%)
+  memory             80Mi (2%)   160Mi (4%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+
+
+Name:               ip-10-20-0-52.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-2-warm-ip
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=1
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1b
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-52.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az4
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1b
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.52
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 10:08:29 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-52.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 10:20:34 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 10:20:24 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 10:20:24 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 10:20:24 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 10:20:24 +0200   Mon, 05 Oct 2026 10:08:42 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.52
+  InternalDNS:  ip-10-20-0-52.ec2.internal
+  Hostname:     ip-10-20-0-52.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927976Ki
+  pods:               17
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372968Ki
+  pods:               17
+System Info:
+  Machine ID:                 ec215aeee3e28bff0d0a5d3b0298d325
+  System UUID:                ec215aee-e3e2-8bff-0d0a-5d3b0298d325
+  Boot ID:                    b6fe1a61-d4f2-41c1-a33b-4ce35f687e1e
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1b/i-EXAMPLE6
+Non-terminated Pods:          (12 in total)
+  Namespace                   Name                     CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                     ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-4kxmd    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m17s
+  default                     pause-68d5b89fc-76qmx    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m17s
+  default                     pause-68d5b89fc-7c974    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m4s
+  default                     pause-68d5b89fc-9rvk4    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m58s
+  default                     pause-68d5b89fc-csb2c    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      9m31s
+  default                     pause-68d5b89fc-ggn9w    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      2m52s
+  default                     pause-68d5b89fc-l8v4f    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      9m31s
+  default                     pause-68d5b89fc-m6c4v    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m4s
+  default                     pause-68d5b89fc-m788j    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      106s
+  default                     pause-68d5b89fc-rnw6j    5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m11s
+  kube-system                 aws-node-vk8tl           50m (2%)      0 (0%)      0 (0%)           0 (0%)         12m
+  kube-system                 kube-proxy-2pw76         100m (5%)     0 (0%)      0 (0%)           0 (0%)         12m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                200m (10%)  0 (0%)
+  memory             80Mi (2%)   160Mi (4%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+
+
+Name:               ip-10-20-0-6.ec2.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.medium
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=ON_DEMAND
+                    eks.amazonaws.com/nodegroup=eks-ipv4-lab-2-warm-ip
+                    eks.amazonaws.com/nodegroup-image=ami-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-EXAMPLE1
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=1
+                    failure-domain.beta.kubernetes.io/region=us-east-1
+                    failure-domain.beta.kubernetes.io/zone=us-east-1a
+                    k8s.io/cloud-provider-aws=d83cc283f4c96c82c9271541d615f96b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-10-20-0-6.ec2.internal
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=t3.medium
+                    topology.k8s.aws/zone-id=use1-az2
+                    topology.kubernetes.io/region=us-east-1
+                    topology.kubernetes.io/zone=us-east-1a
+Annotations:        alpha.kubernetes.io/provided-node-ip: 10.20.0.6
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 05 Oct 2026 10:08:29 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-20-0-6.ec2.internal
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 05 Oct 2026 10:20:35 +0200
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 05 Oct 2026 10:15:36 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 05 Oct 2026 10:15:36 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 05 Oct 2026 10:15:36 +0200   Mon, 05 Oct 2026 10:08:25 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 05 Oct 2026 10:15:36 +0200   Mon, 05 Oct 2026 10:08:42 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   10.20.0.6
+  InternalDNS:  ip-10-20-0-6.ec2.internal
+  Hostname:     ip-10-20-0-6.ec2.internal
+Capacity:
+  cpu:                2
+  ephemeral-storage:  20893676Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3927968Ki
+  pods:               17
+Allocatable:
+  cpu:                1930m
+  ephemeral-storage:  18181869946
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             3372960Ki
+  pods:               17
+System Info:
+  Machine ID:                 ec2793c6792e76fbb2e6a4edcbf0e69f
+  System UUID:                ec2793c6-792e-76fb-b2e6-a4edcbf0e69f
+  Boot ID:                    4b26f2a9-f495-4a77-95df-4b64320d06d9
+  Kernel Version:             6.18.51-120.162.amzn2023.x86_64
+  OS Image:                   Amazon Linux 2023.12.20260928
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.2.7+unknown
+  Kubelet Version:            v1.36.4-eks-3b4a6ca
+ProviderID:                   aws:///us-east-1a/i-EXAMPLE8
+Non-terminated Pods:          (14 in total)
+  Namespace                   Name                        CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                        ------------  ----------  ---------------  -------------  ---
+  default                     pause-68d5b89fc-28cpm       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      7m18s
+  default                     pause-68d5b89fc-4tsxk       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      5m5s
+  default                     pause-68d5b89fc-59snc       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      9m32s
+  default                     pause-68d5b89fc-68qrn       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      2m53s
+  default                     pause-68d5b89fc-8dgsj       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m12s
+  default                     pause-68d5b89fc-c9l57       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      8m25s
+  default                     pause-68d5b89fc-f9w8h       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      107s
+  default                     pause-68d5b89fc-gx5pf       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      6m12s
+  default                     pause-68d5b89fc-pzb2k       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      3m59s
+  default                     pause-68d5b89fc-tn2vw       5m (0%)       0 (0%)      8Mi (0%)         16Mi (0%)      107s
+  kube-system                 aws-node-47c8f              50m (2%)      0 (0%)      0 (0%)           0 (0%)         12m
+  kube-system                 coredns-79f8dffc57-6z664    100m (5%)     0 (0%)      70Mi (2%)        170Mi (5%)     14m
+  kube-system                 coredns-79f8dffc57-822nz    100m (5%)     0 (0%)      70Mi (2%)        170Mi (5%)     19m
+  kube-system                 kube-proxy-tm4jd            100m (5%)     0 (0%)      0 (0%)           0 (0%)         12m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                400m (20%)  0 (0%)
+  memory             220Mi (6%)  500Mi (15%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)

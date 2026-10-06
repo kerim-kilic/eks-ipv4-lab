@@ -1,0 +1,40 @@
+:AWS-SNAT-CHAIN-0 - [0:0]
+-A POSTROUTING -m comment --comment "AWS SNAT CHAIN" -j AWS-SNAT-CHAIN-0
+-A AWS-SNAT-CHAIN-0 -d 100.64.0.0/16 -m comment --comment "AWS SNAT CHAIN" -j RETURN
+-A AWS-SNAT-CHAIN-0 -d 10.20.0.0/24 -m comment --comment "AWS SNAT CHAIN" -j RETURN
+-A AWS-SNAT-CHAIN-0 ! -o vlan+ -m comment --comment "AWS, SNAT" -m addrtype ! --dst-type LOCAL -j SNAT --to-source 10.20.0.12 --random-fully
+
+-A PREROUTING -i ens5 -m comment --comment "AWS, primary ENI" -m addrtype --dst-type LOCAL --limit-iface-in -j CONNMARK --set-xmark 0x80/0x80
+-A PREROUTING -i eni+ -m comment --comment "AWS, primary ENI" -j CONNMARK --restore-mark --nfmask 0x80 --ctmask 0x80
+-A PREROUTING -i vlan+ -m comment --comment "AWS, primary ENI" -j CONNMARK --restore-mark --nfmask 0x80 --ctmask 0x80
+
+0:	from all lookup local
+512:	from all to 10.20.0.16 lookup main
+512:	from all to 10.20.0.13 lookup main
+512:	from all to 10.20.0.14 lookup main
+512:	from all to 10.20.0.15 lookup main
+512:	from all to 10.20.0.22 lookup main
+512:	from all to 100.64.6.32 lookup main
+512:	from all to 100.64.18.37 lookup main
+512:	from all to 100.64.16.184 lookup main
+1024:	from all fwmark 0x80/0x80 lookup main
+1536:	from 100.64.6.32 lookup 2
+1536:	from 100.64.18.37 lookup 2
+1536:	from 100.64.16.184 lookup 2
+32765:	from 100.64.12.112 lookup 2
+32765:	from 100.64.3.50 lookup 3
+32766:	from all lookup main
+32767:	from all lookup default
+
+default via 10.20.0.1 dev ens5 proto dhcp src 10.20.0.12 metric 512 
+10.20.0.0/27 dev ens5 proto kernel scope link src 10.20.0.12 metric 512 
+10.20.0.1 dev ens5 proto dhcp scope link src 10.20.0.12 metric 512 
+10.20.0.2 dev ens5 proto dhcp scope link src 10.20.0.12 metric 512 
+10.20.0.13 dev enib9a0524e015 scope link 
+10.20.0.14 dev eniac5c8d7197d scope link 
+10.20.0.15 dev eni86fea66eb32 scope link 
+10.20.0.16 dev eni90358fd99d6 scope link 
+10.20.0.22 dev enia4087e38c2b scope link 
+100.64.6.32 dev enic0a651d2daa scope link 
+100.64.16.184 dev eni2c1e5cbd1ab scope link 
+100.64.18.37 dev eni6ae20469a95 scope link 

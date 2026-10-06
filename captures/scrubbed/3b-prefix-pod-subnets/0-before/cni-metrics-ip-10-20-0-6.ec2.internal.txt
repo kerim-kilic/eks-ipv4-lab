@@ -1,0 +1,8 @@
+awscni_assigned_ip_addresses 2
+awscni_aws_api_error_count{api="AssignPrivateIpAddresses",error="InsufficientCidrBlocks"} 4
+awscni_eni_allocated 2
+awscni_eni_max 3
+awscni_ip_max 240
+awscni_ipamd_error_count{fn="increaseIPPoolAllocIPAddressesFailed"} 2
+awscni_no_available_ip_addresses 0
+awscni_total_ip_addresses 32
