@@ -1,0 +1,26 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+!terraform/steps/*.tfvars
+crash.log
+# Plan files can contain state values
+*.tfplan
+tfplan
+
+# Cluster credentials written by scripts/kubeconfig.sh
+.kubeconfig
+
+# Raw lab output holds account, resource and IP details: only scrubbed output is committed
+captures/raw/
+
+# Python
+__pycache__/
+
+# Apply and fill logs from a session hold resource IDs
+captures/*.log
+
+# Earlier runs kept for reference, not published
+captures/archive-*/
