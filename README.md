@@ -3,8 +3,8 @@
 [![Checks](https://github.com/kerim-kilic/eks-ipv4-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/kerim-kilic/eks-ipv4-lab/actions/workflows/checks.yml)
 
 A small, short-lived lab that runs an EKS cluster out of IPv4 addresses on purpose, then tries the fixes one at a time:
-tuning the warm pool, prefix delegation, and a secondary `100.64.0.0/16` range for pods. It goes with an article on
-[kerim-kilic.com](https://kerim-kilic.com/articles/), published on 7 November 2026.
+tuning the warm pool, prefix delegation, and a secondary `100.64.0.0/16` range for pods. It goes with the article
+[Your EKS cluster has CPU to spare and no IP addresses left](https://kerim-kilic.com/articles/eks-ipv4-exhaustion/).
 
 Everything is built in one sitting and destroyed at the end. The captured output from my own run is in
 [`captures/scrubbed/`](captures/scrubbed/), with account, resource and public address details replaced. Steps 1 to 3
