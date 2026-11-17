@@ -137,7 +137,10 @@ This is a lab, not a reference architecture:
 
 - the CNI's IAM policy is on the node role, not on the `aws-node` service account through EKS Pod Identity or IRSA;
 - local Terraform state;
-- the cluster endpoint is public, limited to the addresses in `admin_cidrs`.
+- the cluster endpoint is public, limited to the addresses in `admin_cidrs`;
+- no control plane logging, no envelope encryption of Kubernetes secrets with a KMS key, and no VPC Flow Logs
+  (each adds cost and nothing to what the lab measures). These are accepted in the Terraform with `#trivy:ignore`
+  comments, so the Trivy scan in CI still catches anything new.
 
 ## Licence
 
