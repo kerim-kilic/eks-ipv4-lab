@@ -1,3 +1,8 @@
+# Accepted for a short-lived lab (see the README's "Shortcuts taken"):
+# the endpoint is public but limited to admin_cidrs, no control plane logs, and no KMS encryption of Kubernetes secrets.
+#trivy:ignore:AWS-0038
+#trivy:ignore:AWS-0039
+#trivy:ignore:AWS-0040
 resource "aws_eks_cluster" "lab" {
   name     = var.name
   version  = var.kubernetes_version
